@@ -4,6 +4,9 @@ import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import MainIntro from "./pages/Main/MainIntro";
 import MainHeader from "./components/Header1/Header1";
+import Introduction from "./pages/Introduction/Introduction";
+import Qna from "./pages/Qna/Qna";
+import Offer from "./pages/Offer/Offer";
 
 function App() {
   return (
@@ -12,9 +15,11 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<MainIntro />} />
+          <Route path="/Introduction" element={<Introduction />} />
+          <Route path="/Qna" element={<Qna />} />
+          <Route path="/Offer" element={<Offer />} />
         </Routes>
       </BrowserRouter>
-      <MainHeader />
     </div>
   );
 }
