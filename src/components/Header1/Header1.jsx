@@ -1,9 +1,8 @@
 import React from "react";
-import * as S from "../Header1/Header1.style";
+import * as S from "../Header1/Header1.style.js";
 
 const MainHeader = () => {
   return (
-    <S.MainHeader>
       <S.Container>
         <S.Context>
           <p>메인</p>
@@ -12,7 +11,6 @@ const MainHeader = () => {
           <p>문의</p>
         </S.Context>
       </S.Container>
-    </S.MainHeader>
   );
 };
 
