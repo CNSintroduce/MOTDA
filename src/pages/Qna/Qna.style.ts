@@ -6,7 +6,7 @@ export const Container = styled.div`
 `
 
 export const MainText = styled.div`
-    color: #000;
+    color: #fff;
     text-align: center;
     font-family: Inter;
     font-size: 40px;
