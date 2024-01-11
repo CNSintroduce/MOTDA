@@ -5,7 +5,6 @@ const MainIntro = () => {
   return (
     <>
       <MainHeader />
-      {/* <div>Main_intro</div> */}
     </>
   );
 };
