@@ -7,6 +7,8 @@ export const MainTop = styled.div`
   width: 50vw;
   height: 95vh;
   background-color: #1a276d;
+
+  overflow-x: hidden;
 `;
 export const CNSText = styled.p`
   font-size: 60px;
@@ -43,7 +45,19 @@ export const One2 = styled.img`
 `;
 export const imsi = styled.img`
   position: absolute;
-  left: 50vw;
+  left: 45vw;
   top: 10vw;
-  transform: scaleX(1.6);
+  transform: scaleX(1.3);
+`;
+export const MainMiddle = styled.div`
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25vh;
+  margin-left: 15vh;
+`;
+export const MainMiddleImg = styled.img`
+  cursor: pointer;
+  transition: opacity 0.5s ease-in-out;
+  width: 75vw;
 `;
