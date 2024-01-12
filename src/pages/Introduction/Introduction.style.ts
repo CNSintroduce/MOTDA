@@ -5,7 +5,7 @@ export const Container = styled.div`
 `
 
 export const MainText = styled.div`
-    color: #fff;
+    color: #1a1a1a;
     text-align: center;
     font-family: Inter;
     font-size: 40px;
@@ -38,6 +38,7 @@ export const SubTitle = styled.div`
     font-weight: bold;
     font-family: Inter;
     line-height: normal;
+    color: #1a1a1a;
     font-style: normal;
     font-size: 1.4rem;
     justify-content: space-around;
@@ -53,6 +54,7 @@ export const MemberSubTitle = styled.div`
     align-content: center;
     margin-top: 10vh;
     margin-right: 2vw;
+    color: #1a1a1a;
     font-weight: bold;
     font-family: Inter;
     line-height: normal;
@@ -68,7 +70,7 @@ export const MemberSubTitle = styled.div`
 `
 
 export const SubText = styled.div`
-    color: #ffffff;
+    color: #1a1a1a;
     font-family: Inter;
     font-size: 1.2rem;
     font-style: normal;
@@ -89,6 +91,7 @@ export const MemberYear = styled.div`
     border-bottom: 0.7px solid #B0B0B0;
     padding-top: 1vh;
     font-size: 1.3rem;
+    color: #1a1a1a;
     font-family: Inter;
     margin-left: 12vw;
     display:flex;
@@ -102,9 +105,7 @@ export const MemberYear = styled.div`
 export const Member = styled.div`
     width: 45vw;
     height: 5vh;
-    //border-top: 0.7px solid #B0B0B0;
-    //border-bottom: 0.7px solid #B0B0B0;
-    
+    color: #1a1a1a;
     padding-top: 1vh;
     font-size: 1.3rem;
     font-family: Inter;
@@ -118,7 +119,7 @@ export const Member = styled.div`
 `
 
 export const MemberPosition = styled.div`
-    color: #fff;
+    color: #1a1a1a;
     font-family: Inter;
     font-size: 17px;
     font-style: normal;
