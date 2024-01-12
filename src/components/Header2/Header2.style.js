@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const MainHeader = styled.div`
-  width: 100%;
+  width: 100vh;
   height: 9vh;
   align-items: center;
   display: flex;
