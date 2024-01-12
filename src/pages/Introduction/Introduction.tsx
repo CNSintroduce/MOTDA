@@ -183,7 +183,7 @@ const Introduction = () => {
                             }
                             {
                                 isClick === 3 &&(
-                                    <S.Member>권영성
+                                    <S.Member>김영성
                                         <S.MemberPosition>Design</S.MemberPosition>
                                     </S.Member>
                                 )
