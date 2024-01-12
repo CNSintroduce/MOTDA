@@ -6,7 +6,7 @@ export const Container = styled.div`
 `
 
 export const MainText = styled.div`
-    color: #fff;
+    color: #1a1a1a;
     text-align: center;
     font-family: Inter;
     font-size: 40px;
@@ -41,6 +41,7 @@ export const QuestionAndAnswer = styled.div`
 `
 export const Question = styled.div`
     width: 60vw;
+    color: #1a1a1a;
     height: 5vh;
     border-bottom: 0.5px solid #000;
     font-size: 1.3rem;
