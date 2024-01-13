@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import MainHeader from "../../components/Header1/Header1";
 import * as s from "../Main/MainIntro.style";
-import one from "../../../public/img/one1.svg";
-import one2 from "../../../public/img/one2.svg";
-import imsi from "../../../public/img/imsi.svg";
-import leftarrow from "../../../public/img/leftarrow.svg";
-import rightarrow from "../../../public/img/rightarrow.svg";
-import Challenge from "../../../public/img/Challenge.svg";
-import Navigate from "../../../public/img/Navigate.svg";
-import Succeed from "../../../public/img/Succeed.svg";
+import one from "../../assets/img/one1.svg";
+import one2 from "../../assets/img/one2.svg";
+import imsi from "../../assets/img/imsi.svg";
+import leftarrow from "../../assets/img/leftarrow.svg";
+import rightarrow from "../../assets/img/rightarrow.svg";
+import Challenge from "../../assets/img/Challenge.svg";
+import Navigate from "../../assets/img/Navigate.svg";
+import Succeed from "../../assets/img/Succeed.svg";
 
 const MainIntro = () => {
   const [currentImage1, setCurrentImage1] = useState();
