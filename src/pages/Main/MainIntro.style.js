@@ -66,13 +66,12 @@ const MainMiddleImg = styled.img`
 `;
 export const MainMiddleImgLeft = styled.img`
   cursor: pointer;
-  transition: opacity 0.5s ease-in-out;
+
   object-fit: none;
   width: 10vw;
   transform: translateX(-1%);
   overflow: hidden;
   object-position: right bottom;
-  transition: transform 0.5s ease-in-out;
 `;
 export const MainMiddleImgRight = styled.img`
   cursor: pointer;
@@ -82,5 +81,4 @@ export const MainMiddleImgRight = styled.img`
   transform: translateX(1%);
   overflow: hidden;
   object-position: left top;
-  transition: transform 0.5s ease-in-out;
 `;

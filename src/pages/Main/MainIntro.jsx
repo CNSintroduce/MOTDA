@@ -29,14 +29,6 @@ const MainIntro = () => {
       setCurrentImage2(Navigate);
       setCurrentImage3(Succeed);
     }
-    document
-      .getElementById("mainMiddleImg")
-      .classList.add("animate-slide-right");
-    setTimeout(() => {
-      document
-        .getElementById("mainMiddleImg")
-        .classList.remove("animate-slide-right");
-    }, 500);
   };
 
   const handleNextImage = () => {
@@ -53,14 +45,6 @@ const MainIntro = () => {
       setCurrentImage2(Succeed);
       setCurrentImage3();
     }
-    document
-      .getElementById("mainMiddleImg")
-      .classList.add("animate-slide-left");
-    setTimeout(() => {
-      document
-        .getElementById("mainMiddleImg")
-        .classList.remove("animate-slide-left");
-    }, 500);
   };
 
   return (
