@@ -43,9 +43,12 @@ export const One2 = styled.img`
   position: absolute;
   top: 175vh;
 `;
-export const imsi = styled.img`
+export const Imsi = styled.img`
   position: absolute;
-  left: 45vw;
+  overflow: hidden;
+  object-fit: none;
+  object-position: left top;
+  left: 43vw;
   top: 10vw;
   transform: scaleX(1.3);
 `;
@@ -54,10 +57,30 @@ export const MainMiddle = styled.div`
   display: flex;
   justify-content: space-between;
   margin-top: 25vh;
-  margin-left: 15vh;
 `;
-export const MainMiddleImg = styled.img`
+
+const MainMiddleImg = styled.img`
   cursor: pointer;
   transition: opacity 0.5s ease-in-out;
   width: 75vw;
+`;
+export const MainMiddleImgLeft = styled.img`
+  cursor: pointer;
+  transition: opacity 0.5s ease-in-out;
+  object-fit: none;
+  width: 10vw;
+  transform: translateX(-1%);
+  overflow: hidden;
+  object-position: right bottom;
+  transition: transform 0.5s ease-in-out;
+`;
+export const MainMiddleImgRight = styled.img`
+  cursor: pointer;
+  transition: opacity 0.5s ease-in-out;
+  object-fit: none;
+  width: 10vw;
+  transform: translateX(1%);
+  overflow: hidden;
+  object-position: left top;
+  transition: transform 0.5s ease-in-out;
 `;
