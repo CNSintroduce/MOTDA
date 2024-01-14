@@ -1,11 +1,12 @@
 import styled from "styled-components";
 
 export const MainHeader = styled.div`
-  width: 100vw;
-  height: 9vh;
-  align-items: center;
-  display: flex;
-  justify-content: space-around;
+    width: 100vw;
+    height: 9vh;
+    color: #1a1a1a;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
 `;
 
 export const Logo = styled.img`
