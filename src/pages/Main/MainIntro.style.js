@@ -59,7 +59,7 @@ export const MainMiddle = styled.div`
   margin-top: 25vh;
 `;
 
-const MainMiddleImg = styled.img`
+export const MainMiddleImg = styled.img`
   cursor: pointer;
   transition: opacity 0.5s ease-in-out;
   width: 75vw;
