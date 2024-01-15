@@ -1,4 +1,15 @@
-import styled from "styled-components";
+import styled, {keyframes} from "styled-components";
+
+const fadeIn = keyframes`
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+`;
 
 export const Container = styled.div`
     display: flex;
@@ -111,6 +122,7 @@ export const Member = styled.div`
     font-family: Inter;
     margin-left: 12vw;
     display:flex;
+    animation: ${fadeIn} 0.3s ease-in;
     border-bottom: 0.7px solid #B0B0B0;
     font-weight: bold;
     &:first-child {
@@ -127,4 +139,7 @@ export const MemberPosition = styled.div`
     margin-left: 8vw;
     padding-top: 1vh;
     line-height: normal;
+`
+export const Image = styled.svg`
+    transition: transform 0.3s;
 `

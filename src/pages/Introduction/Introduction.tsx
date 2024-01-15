@@ -25,19 +25,19 @@ const Introduction = () => {
                         <S.MemberSubTitle>CNS MEMBER</S.MemberSubTitle>
                         <div style={{marginBottom: "10vh", width: "60vw", marginLeft: "2vw"}}>
                             <S.MemberYear>5기
-                                <svg onClick={()=>toggleHandler(5)}
-                                     xmlns="http://www.w3.org/2000/svg"
-                                     width="13"
-                                     height="8"
-                                     viewBox="0 0 13 8"
-                                     fill="none"
-                                     style={{
-                                         transform: isClick === 5 ? "none" : "rotate(180deg)",
-                                    marginLeft:"40.2vw",
-                                    marginTop:"1vh"
-                                }}>
+                                <S.Image onClick={()=>toggleHandler(5)}
+                                         xmlns="http://www.w3.org/2000/svg"
+                                         width="15"
+                                         height="15"
+                                         viewBox="0 0 13 8"
+                                         fill="none"
+                                         style={{
+                                             transform: isClick === 5 ? "rotate(360deg)" : "rotate(270deg)",
+                                             marginLeft:"40.2vw",
+                                             marginTop:"1vh"
+                                         }}>
                                     <path d="M13 0.57704L0 0.57704L6.5 7.81543L13 0.57704Z" fill="#2248AC"/>
-                                </svg>
+                                </S.Image>
                             </S.MemberYear>
                             {
                                 isClick === 5 &&(
@@ -75,19 +75,19 @@ const Introduction = () => {
                                 )
                             }
                             <S.MemberYear>4기
-                                <svg onClick={()=>toggleHandler(4)}
+                                <S.Image onClick={()=>toggleHandler(4)}
                                      xmlns="http://www.w3.org/2000/svg"
-                                     width="13"
-                                     height="8"
+                                     width="15"
+                                     height="15"
                                      viewBox="0 0 13 8"
                                      fill="none"
                                      style={{
-                                         transform: isClick === 4 ? "none" : "rotate(180deg)",
+                                         transform: isClick === 4 ? "rotate(360deg)" : "rotate(270deg)",
                                          marginLeft:"40vw",
                                          marginTop:"1vh"
                                      }}>
                                     <path d="M13 0.57704L0 0.57704L6.5 7.81543L13 0.57704Z" fill="#2248AC"/>
-                                </svg>
+                                </S.Image>
                             </S.MemberYear>
                             {
                                 isClick === 4 &&(
@@ -125,19 +125,19 @@ const Introduction = () => {
                                 )
                             }
                             <S.MemberYear>3기
-                            <svg onClick={()=>toggleHandler(3)}
+                            <S.Image onClick={()=>toggleHandler(3)}
                                  xmlns="http://www.w3.org/2000/svg"
-                                 width="13"
-                                 height="8"
+                                 width="15"
+                                 height="15"
                                  viewBox="0 0 13 8"
                                  fill="none"
                                  style={{
-                                     transform: isClick === 3 ? "none" : "rotate(180deg)",
+                                     transform: isClick === 3 ? "rotate(360deg)" : "rotate(270deg)",
                                      marginLeft:"40.1vw",
                                      marginTop:"1vh"
                                  }}>
                                 <path d="M13 0.57704L0 0.57704L6.5 7.81543L13 0.57704Z" fill="#2248AC"/>
-                            </svg>
+                            </S.Image>
                         </S.MemberYear>
                             {
                                 isClick === 3 &&(
@@ -189,19 +189,19 @@ const Introduction = () => {
                                 )
                             }
                             <S.MemberYear>2기
-                            <svg onClick={()=>toggleHandler(2)}
+                            <S.Image onClick={()=>toggleHandler(2)}
                                  xmlns="http://www.w3.org/2000/svg"
-                                 width="13"
-                                 height="8"
+                                 width="15"
+                                 height="15"
                                  viewBox="0 0 13 8"
                                  fill="none"
                                  style={{
-                                     transform: isClick === 2 ? "none" : "rotate(180deg)",
+                                     transform: isClick === 2 ? "rotate(360deg)" : "rotate(270deg)",
                                      marginLeft:"40.1vw",
                                      marginTop:"1vh"
                                  }}>
                                 <path d="M13 0.57704L0 0.57704L6.5 7.81543L13 0.57704Z" fill="#2248AC"/>
-                            </svg>
+                            </S.Image>
                         </S.MemberYear>
                             {
                                 isClick === 2 &&(
@@ -239,19 +239,19 @@ const Introduction = () => {
                                 )
                             }
                             <S.MemberYear>1기
-                            <svg onClick={()=>toggleHandler(1)}
+                            <S.Image onClick={()=>toggleHandler(1)}
                                  xmlns="http://www.w3.org/2000/svg"
-                                 width="13"
-                                 height="8"
+                                 width="15"
+                                 height="15"
                                  viewBox="0 0 13 8"
                                  fill="none"
                                  style={{
-                                     transform: isClick === 1 ? "none" : "rotate(180deg)",
+                                     transform: isClick === 1 ? "rotate(360deg)" : "rotate(270deg)",
                                      marginLeft:"40.3vw",
                                      marginTop:"1vh"
                                  }}>
                                 <path d="M13 0.57704L0 0.57704L6.5 7.81543L13 0.57704Z" fill="#2248AC"/>
-                            </svg>
+                            </S.Image>
                         </S.MemberYear>
                             {
                                 isClick === 1 &&(

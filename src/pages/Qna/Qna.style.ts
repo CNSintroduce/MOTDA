@@ -1,10 +1,19 @@
-import styled from "styled-components";
-
+import styled, {keyframes} from "styled-components";
 
 export const Container = styled.div`
     display: flex;    
 `
 
+const fadeIn = keyframes`
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+`;
 export const MainText = styled.div`
     color: #1a1a1a;
     text-align: center;
@@ -61,6 +70,7 @@ export const Answer = styled.div`
     font-weight: 600;
     line-height: normal;
 
+    animation: ${fadeIn} 0.3s ease-in;
     display: flex;
     flex-wrap: wrap;
 
