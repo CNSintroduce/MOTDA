@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import MainHeader from "../../components/Header1/Header1";
 import * as s from "../Main/MainIntro.style";
 import one from "../../assets/img/one1.svg";
@@ -9,41 +9,28 @@ import rightarrow from "../../assets/img/rightarrow.svg";
 import Challenge from "../../assets/img/Challenge.svg";
 import Navigate from "../../assets/img/Navigate.svg";
 import Succeed from "../../assets/img/Succeed.svg";
+import Last from "../../assets/img/Last.svg";
 
 const MainIntro = () => {
-  const [currentImage1, setCurrentImage1] = useState();
-  const [currentImage2, setCurrentImage2] = useState(Challenge);
-  const [currentImage3, setCurrentImage3] = useState(Navigate);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const imageUrls = [Challenge, Navigate, Succeed];
+  const selectedImageUrl = imageUrls[currentIndex];
 
-  const handlePreviousImage = () => {
-    if (currentImage2 === Challenge) {
-      setCurrentImage1();
-      setCurrentImage2(Challenge);
-      setCurrentImage3(Navigate);
-    } else if (currentImage2 === Navigate) {
-      setCurrentImage1();
-      setCurrentImage2(Challenge);
-      setCurrentImage3(Navigate);
-    } else if (currentImage2 === Succeed) {
-      setCurrentImage1(Challenge);
-      setCurrentImage2(Navigate);
-      setCurrentImage3(Succeed);
+  const updateCurrentIndex = (newIndex) => {
+    if (newIndex < 0) {
+      setCurrentIndex(imageUrls.length - 1); // 배열의 마지막 인덱스로 설정
+    } else if (newIndex >= imageUrls.length) {
+      setCurrentIndex(0); // 배열의 첫 인덱스로 설정
+    } else {
+      setCurrentIndex(newIndex);
     }
   };
 
-  const handleNextImage = () => {
-    if (currentImage2 === Challenge) {
-      setCurrentImage1(Challenge);
-      setCurrentImage2(Navigate);
-      setCurrentImage3(Succeed);
-    } else if (currentImage2 === Navigate) {
-      setCurrentImage1(Navigate);
-      setCurrentImage2(Succeed);
-      setCurrentImage3();
-    } else if (currentImage2 === Succeed) {
-      setCurrentImage1(Navigate);
-      setCurrentImage2(Succeed);
-      setCurrentImage3();
+  const handleArrowClick = (direction) => {
+    if (direction === "left") {
+      updateCurrentIndex(currentIndex - 1);
+    } else if (direction === "right") {
+      updateCurrentIndex(currentIndex + 1);
     }
   };
 
@@ -68,12 +55,20 @@ const MainIntro = () => {
       <s.One2 src={one2} alt="" />
       <s.Imsi src={imsi} alt="" />
       <s.MainMiddle>
-        <s.MainMiddleImgLeft src={currentImage1} alt="" />
-        <img src={leftarrow} alt="" onClick={handlePreviousImage} />
-        <s.MainMiddleImg src={currentImage2} alt="" />
-        <img src={rightarrow} alt="" onClick={handleNextImage} />
-        <s.MainMiddleImgRight src={currentImage3} alt="" />
+        <s.MainMiddleImg src={selectedImageUrl} alt="" />
+        <s.ArrowLine>
+          <s.Arrow onClick={() => handleArrowClick("left")}>
+            <s.ArrowImg src={leftarrow} alt="" />
+          </s.Arrow>
+          <s.Arrow onClick={() => handleArrowClick("right")}>
+            <s.ArrowImg src={rightarrow} alt="" />
+          </s.Arrow>
+        </s.ArrowLine>
       </s.MainMiddle>
+      <s.CNSBottom>
+        <s.CNSP>당신의 시작을 그려주는 동아리, CNS입니다.</s.CNSP>
+        <img src={Last} alt="" />
+      </s.CNSBottom>
     </>
   );
 };
