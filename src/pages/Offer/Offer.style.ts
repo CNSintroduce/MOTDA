@@ -109,13 +109,50 @@ export const Page2TexT = styled.span`
 `
 
 export const Mokup2 = styled.img`
-    width: 626px;
-    height: 470px;
+    width: 800px;
 
     position: absolute;
     top: 0;
     left: 0;
     display: flex;
 
-    align-items: center;
+    margin-top: 275px;
+    margin-left: 105px;
+`
+
+export const Page3Text = styled.div`
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+
+    margin-left: 60%;
+    margin-top: 140%;
+`
+
+export const Present = styled.div`
+    color: #000;
+
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+`
+export const Page3Img = styled.img`
+    position: relative;
+`
+
+export const IdaTitle = styled.div`
+    background: linear-gradient(180deg, #2248AC 0%, #081B50 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    font-family: Inter;
+    font-size: 210px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+
 `

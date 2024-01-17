@@ -5,6 +5,7 @@ import * as S from "../Offer/Offer.style";
 import serviceMain from "../../assets/img/serviceMain.png";
 import service2nd from "../../assets/img/service2page.svg";
 import mokup2 from "../../assets/img/mokup2.png";
+import serviceBackground from "../../assets/img/serivceBackground.svg";
 
 const Offer = () => {
   return (
@@ -36,6 +37,18 @@ const Offer = () => {
             </S.Page2dddiv>
             <S.Mokup2 src={mokup2} alt="error"/>
           </S.Page2Img>
+          <>
+            <S.Page3Img src={serviceBackground} alt="error"/>
+            <S.Page3Text>
+                <S.Present> 신입생을 위한 선물, </S.Present>
+            </S.Page3Text>
+            <div>
+                <S.IdaTitle> IDA </S.IdaTitle>
+            </div>
+          </>
+        </>
+        <>
+
         </>
       </>
     </>
