@@ -1,13 +1,10 @@
 import React, { useRef, useState, useEffect } from "react";
 import MainHeader from "../../components/Header1/Header1";
 import * as s from "../Main/MainIntro.style";
-import one from "../../assets/img/one1.svg";
-import one2 from "../../assets/img/one2.svg";
 import imsi from "../../assets/img/imsi.svg";
 import Success from "../../assets/img/Success.svg";
 import Challenge from "../../assets/img/Challenge.svg";
 import Navigate from "../../assets/img/Navigate.svg";
-import Succeed from "../../assets/img/Succeed.svg";
 import Last from "../../assets/img/Last.svg";
 
 const MainIntro = () => {
@@ -41,7 +38,6 @@ const MainIntro = () => {
   return (
     <>
       <MainHeader />
-
       <s.MainTop>
         <s.CNSText>
           <s.CNS2>C</s.CNS2> are <br />
