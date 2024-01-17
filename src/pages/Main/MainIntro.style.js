@@ -58,44 +58,27 @@ export const Imsi = styled.img`
   top: 10vw;
   transform: scaleX(1.3);
 `;
-export const MainMiddleImg = styled.img`
-  width: 100vw;
-  position: absolute;
-`;
-export const Arrow = styled.button`
-  position: relative;
-  border-radius: 100%;
-  height: 70px;
-  background-color: transparent;
-  border: none;
-`;
-export const ArrowImg = styled.img`
-  margin: 0;
-  width: 30px;
-  height: 30px;
-  left: 10px;
-`;
-export const ArrowLine = styled.div`
-  display: flex;
-  justify-content: space-between;
-  width: 100vw;
-`;
-export const MainMiddle = styled.div`
-  margin: 0;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  margin-top: 140px;
-`;
+
 export const CNSP = styled.p`
   font-size: 30px;
   font-weight: 600;
   margin-bottom: 100px;
+  margin-left: 20px;
 `;
 export const CNSBottom = styled.div`
+  margin-left: 15vw;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: space-around;
+`;
+export const MainMiddle = styled.div`
+  margin-top: 30vh;
+  margin-left: 18vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+export const MainMiddleImg = styled.img`
+  margin-bottom: 20vh;
 `;

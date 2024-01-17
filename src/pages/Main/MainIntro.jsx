@@ -1,38 +1,42 @@
-import React, { useState, useEffect } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import MainHeader from "../../components/Header1/Header1";
 import * as s from "../Main/MainIntro.style";
 import one from "../../assets/img/one1.svg";
 import one2 from "../../assets/img/one2.svg";
 import imsi from "../../assets/img/imsi.svg";
-import leftarrow from "../../assets/img/leftarrow.svg";
-import rightarrow from "../../assets/img/rightarrow.svg";
+import Success from "../../assets/img/Success.svg";
 import Challenge from "../../assets/img/Challenge.svg";
 import Navigate from "../../assets/img/Navigate.svg";
 import Succeed from "../../assets/img/Succeed.svg";
 import Last from "../../assets/img/Last.svg";
 
 const MainIntro = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const imageUrls = [Challenge, Navigate, Succeed];
-  const selectedImageUrl = imageUrls[currentIndex];
+  const element1 = useRef(null);
+  const element2 = useRef(null);
+  const element3 = useRef(null);
+  const [challengeVisible, setChallengeVisible] = useState(false);
+  const [navigateVisible, setNavigateVisible] = useState(false);
+  const [successVisible, setSuccessVisible] = useState(false);
 
-  const updateCurrentIndex = (newIndex) => {
-    if (newIndex < 0) {
-      setCurrentIndex(imageUrls.length - 1); // 배열의 마지막 인덱스로 설정
-    } else if (newIndex >= imageUrls.length) {
-      setCurrentIndex(0); // 배열의 첫 인덱스로 설정
-    } else {
-      setCurrentIndex(newIndex);
-    }
-  };
+  useEffect(() => {
+    const handleScroll = () => {
+      const { top: top1 } = element1.current.getBoundingClientRect();
+      const { top: top2 } = element2.current.getBoundingClientRect();
+      const { top: top3 } = element3.current.getBoundingClientRect();
+      const isInViewPort1 = top1 >= 0 && top1 <= window.innerHeight;
+      const isInViewPort2 = top2 >= 0 && top2 <= window.innerHeight;
+      const isInViewPort3 = top3 >= 0 && top3 <= window.innerHeight;
+      setChallengeVisible(isInViewPort1);
+      setNavigateVisible(isInViewPort2);
+      setSuccessVisible(isInViewPort3);
+    };
 
-  const handleArrowClick = (direction) => {
-    if (direction === "left") {
-      updateCurrentIndex(currentIndex - 1);
-    } else if (direction === "right") {
-      updateCurrentIndex(currentIndex + 1);
-    }
-  };
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <>
@@ -51,19 +55,40 @@ const MainIntro = () => {
         </s.CNSText2>
       </s.MainTop>
 
-      <s.One1 src={one} alt="" />
-      <s.One2 src={one2} alt="" />
       <s.Imsi src={imsi} alt="" />
       <s.MainMiddle>
-        <s.MainMiddleImg src={selectedImageUrl} alt="" />
-        <s.ArrowLine>
-          <s.Arrow onClick={() => handleArrowClick("left")}>
-            <s.ArrowImg src={leftarrow} alt="" />
-          </s.Arrow>
-          <s.Arrow onClick={() => handleArrowClick("right")}>
-            <s.ArrowImg src={rightarrow} alt="" />
-          </s.Arrow>
-        </s.ArrowLine>
+        <s.MainMiddleImg
+          ref={element1}
+          src={Challenge}
+          alt=""
+          style={{
+            opacity: challengeVisible ? 1 : 0,
+            transform: challengeVisible ? "translateY(0)" : "translateY(50px)",
+            transition: "opacity 0.5s, transform 0.5s",
+          }}
+        />
+
+        <s.MainMiddleImg
+          ref={element2}
+          src={Navigate}
+          alt=""
+          style={{
+            opacity: navigateVisible ? 1 : 0,
+            transform: navigateVisible ? "translateY(0)" : "translateY(50px)",
+            transition: "opacity 0.5s, transform 0.5s",
+          }}
+        />
+
+        <s.MainMiddleImg
+          ref={element3}
+          src={Success}
+          alt=""
+          style={{
+            opacity: successVisible ? 1 : 0,
+            transform: successVisible ? "translateY(0)" : "translateY(50px)",
+            transition: "opacity 0.5s, transform 0.5s",
+          }}
+        />
       </s.MainMiddle>
       <s.CNSBottom>
         <s.CNSP>당신의 시작을 그려주는 동아리, CNS입니다.</s.CNSP>
