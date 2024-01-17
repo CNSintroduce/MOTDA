@@ -4,6 +4,7 @@ import * as S from "../Offer/Offer.style";
 
 import serviceMain from "../../assets/img/serviceMain.png";
 import service2nd from "../../assets/img/service2page.svg";
+import mokup2 from "../../assets/img/mokup2.png";
 
 const Offer = () => {
   return (
@@ -33,6 +34,7 @@ const Offer = () => {
                     여러분이 성공을 즐기는 개발자가 되기를 바랍니다.
                 </S.Page2TexT>
             </S.Page2dddiv>
+            <S.Mokup2 src={mokup2} alt="error"/>
           </S.Page2Img>
         </>
       </>

@@ -107,3 +107,15 @@ export const Page2TexT = styled.span`
     font-weight: 600;
     line-height: 170%;
 `
+
+export const Mokup2 = styled.img`
+    width: 626px;
+    height: 470px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+
+    align-items: center;
+`
