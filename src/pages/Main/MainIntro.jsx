@@ -1,67 +1,42 @@
-import React, { useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import MainHeader from "../../components/Header1/Header1";
 import * as s from "../Main/MainIntro.style";
 import one from "../../assets/img/one1.svg";
 import one2 from "../../assets/img/one2.svg";
 import imsi from "../../assets/img/imsi.svg";
-import leftarrow from "../../assets/img/leftarrow.svg";
-import rightarrow from "../../assets/img/rightarrow.svg";
+import Success from "../../assets/img/Success.svg";
 import Challenge from "../../assets/img/Challenge.svg";
 import Navigate from "../../assets/img/Navigate.svg";
 import Succeed from "../../assets/img/Succeed.svg";
+import Last from "../../assets/img/Last.svg";
 
 const MainIntro = () => {
-  const [currentImage1, setCurrentImage1] = useState();
-  const [currentImage2, setCurrentImage2] = useState(Challenge);
-  const [currentImage3, setCurrentImage3] = useState(Navigate);
+  const element1 = useRef(null);
+  const element2 = useRef(null);
+  const element3 = useRef(null);
+  const [challengeVisible, setChallengeVisible] = useState(false);
+  const [navigateVisible, setNavigateVisible] = useState(false);
+  const [successVisible, setSuccessVisible] = useState(false);
 
-  const handlePreviousImage = () => {
-    if (currentImage2 === Challenge) {
-      setCurrentImage1();
-      setCurrentImage2(Challenge);
-      setCurrentImage3(Navigate);
-    } else if (currentImage2 === Navigate) {
-      setCurrentImage1();
-      setCurrentImage2(Challenge);
-      setCurrentImage3(Navigate);
-    } else if (currentImage2 === Succeed) {
-      setCurrentImage1(Challenge);
-      setCurrentImage2(Navigate);
-      setCurrentImage3(Succeed);
-    }
-    document
-      .getElementById("mainMiddleImg")
-      .classList.add("animate-slide-right");
-    setTimeout(() => {
-      document
-        .getElementById("mainMiddleImg")
-        .classList.remove("animate-slide-right");
-    }, 500);
-  };
+  useEffect(() => {
+    const handleScroll = () => {
+      const { top: top1 } = element1.current.getBoundingClientRect();
+      const { top: top2 } = element2.current.getBoundingClientRect();
+      const { top: top3 } = element3.current.getBoundingClientRect();
+      const isInViewPort1 = top1 >= 0 && top1 <= window.innerHeight;
+      const isInViewPort2 = top2 >= 0 && top2 <= window.innerHeight;
+      const isInViewPort3 = top3 >= 0 && top3 <= window.innerHeight;
+      setChallengeVisible(isInViewPort1);
+      setNavigateVisible(isInViewPort2);
+      setSuccessVisible(isInViewPort3);
+    };
 
-  const handleNextImage = () => {
-    if (currentImage2 === Challenge) {
-      setCurrentImage1(Challenge);
-      setCurrentImage2(Navigate);
-      setCurrentImage3(Succeed);
-    } else if (currentImage2 === Navigate) {
-      setCurrentImage1(Navigate);
-      setCurrentImage2(Succeed);
-      setCurrentImage3();
-    } else if (currentImage2 === Succeed) {
-      setCurrentImage1(Navigate);
-      setCurrentImage2(Succeed);
-      setCurrentImage3();
-    }
-    document
-      .getElementById("mainMiddleImg")
-      .classList.add("animate-slide-left");
-    setTimeout(() => {
-      document
-        .getElementById("mainMiddleImg")
-        .classList.remove("animate-slide-left");
-    }, 500);
-  };
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <>
@@ -80,16 +55,45 @@ const MainIntro = () => {
         </s.CNSText2>
       </s.MainTop>
 
-      <s.One1 src={one} alt="" />
-      <s.One2 src={one2} alt="" />
       <s.Imsi src={imsi} alt="" />
       <s.MainMiddle>
-        <s.MainMiddleImgLeft src={currentImage1} alt="" />
-        <img src={leftarrow} alt="" onClick={handlePreviousImage} />
-        <s.MainMiddleImg src={currentImage2} alt="" />
-        <img src={rightarrow} alt="" onClick={handleNextImage} />
-        <s.MainMiddleImgRight src={currentImage3} alt="" />
+        <s.MainMiddleImg
+          ref={element1}
+          src={Challenge}
+          alt=""
+          style={{
+            opacity: challengeVisible ? 1 : 0,
+            transform: challengeVisible ? "translateY(0)" : "translateY(50px)",
+            transition: "opacity 0.5s, transform 0.5s",
+          }}
+        />
+
+        <s.MainMiddleImg
+          ref={element2}
+          src={Navigate}
+          alt=""
+          style={{
+            opacity: navigateVisible ? 1 : 0,
+            transform: navigateVisible ? "translateY(0)" : "translateY(50px)",
+            transition: "opacity 0.5s, transform 0.5s",
+          }}
+        />
+
+        <s.MainMiddleImg
+          ref={element3}
+          src={Success}
+          alt=""
+          style={{
+            opacity: successVisible ? 1 : 0,
+            transform: successVisible ? "translateY(0)" : "translateY(50px)",
+            transition: "opacity 0.5s, transform 0.5s",
+          }}
+        />
       </s.MainMiddle>
+      <s.CNSBottom>
+        <s.CNSP>당신의 시작을 그려주는 동아리, CNS입니다.</s.CNSP>
+        <img src={Last} alt="" />
+      </s.CNSBottom>
     </>
   );
 };
