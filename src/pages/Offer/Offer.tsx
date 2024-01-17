@@ -6,6 +6,8 @@ import serviceMain from "../../assets/img/serviceMain.png";
 import service2nd from "../../assets/img/service2page.svg";
 import mokup2 from "../../assets/img/mokup2.png";
 import serviceBackground from "../../assets/img/serivceBackground.svg";
+import bluelineBackground from "../../assets/img/bluelineBackground.svg";
+import whitelineBackground from "../../assets/img/servicewhiteline.svg";
 
 const Offer = () => {
   return (
@@ -37,19 +39,56 @@ const Offer = () => {
             </S.Page2dddiv>
             <S.Mokup2 src={mokup2} alt="error"/>
           </S.Page2Img>
-          <>
+        </>
+        <>
             <S.Page3Img src={serviceBackground} alt="error"/>
             <S.Page3Text>
                 <S.Present> 신입생을 위한 선물, </S.Present>
             </S.Page3Text>
-            <div>
+            <S.IdatTitleWrap>
                 <S.IdaTitle> IDA </S.IdaTitle>
-            </div>
+            </S.IdatTitleWrap>
           </>
-        </>
-        <>
-
-        </>
+          <>
+            <S.blueLine src={bluelineBackground}/>
+            <S.IdaFirstWrap>
+              <S.IdaFirst>
+                <S.IdaFirstIda> IDA</S.IdaFirstIda> 는
+              </S.IdaFirst>
+            </S.IdaFirstWrap>
+            <S.IdaFirstWrap2>
+              <S.IdaFirst1>
+                신입생의 입학 절차를 도와줄 
+              </S.IdaFirst1>
+            </S.IdaFirstWrap2>
+            <S.IdaFirstWrap3>
+              <S.IdaFirst>
+                <S.IdaFirstIdaStu> "학생"</S.IdaFirstIdaStu>들이 개발한 
+              </S.IdaFirst>
+            </S.IdaFirstWrap3>
+            <S.IdaFirstWrap4>
+              <S.IdaFirst>
+                <S.IdaFirstIdaSite> 입학원서 접수 사이트</S.IdaFirstIdaSite>입니다.
+              </S.IdaFirst>
+            </S.IdaFirstWrap4>
+          </>
+          <>
+            <S.IdaSecondWrap> 
+              <S.IdaSecond1> 당신의 새로운 출발을 위한 </S.IdaSecond1>
+            </S.IdaSecondWrap>
+            <S.IdaSecondWrap1> 
+              <S.IdaSecond1> 가장 따뜻한 서비스, </S.IdaSecond1>
+            </S.IdaSecondWrap1>
+            <S.IdaSecondWrap2> 
+              <S.IdaSecond2> IDA </S.IdaSecond2>
+            </S.IdaSecondWrap2>
+          </>
+      </>
+      <>
+        <S.WhiteLine src={whitelineBackground}/>
+        <S.LessflowTitleWrap>
+          <S.LessflowTitle> lessf!ow </S.LessflowTitle>
+        </S.LessflowTitleWrap>
       </>
     </>
   );
