@@ -84,11 +84,45 @@ const Offer = () => {
             </S.IdaSecondWrap2>
           </>
       </>
-      <>
+      <> 
         <S.WhiteLine src={whitelineBackground}/>
         <S.LessflowTitleWrap>
           <S.LessflowTitle> lessf!ow </S.LessflowTitle>
         </S.LessflowTitleWrap>
+        <S.Lessflow2Wrap>
+          <S.Lessflow2> 뉴스를 더 쉽게 </S.Lessflow2>
+        </S.Lessflow2Wrap>
+        <S.Lessflow3Wrap>
+          <S.Lessflow3> 불필요한 것은 적게, </S.Lessflow3>
+        </S.Lessflow3Wrap>
+        <S.Lessflow4Wrap>
+          <S.Lessflow3> 정보는 흐르게 </S.Lessflow3>
+        </S.Lessflow4Wrap>
+      </>
+      <>
+        <S.LessflowSecondWrap>
+          <S.LessflowSecond> lessf!ow </S.LessflowSecond>
+        </S.LessflowSecondWrap>
+        <S.LessflowSecondWrap1>
+          <S.LessflowSecond1> 일분 일초가 바쁜 시대를 살고있는 </S.LessflowSecond1>
+        </S.LessflowSecondWrap1>
+        <S.LessflowSecondWrap2>
+          <S.LessflowSecond1> 여러분들을 위해  </S.LessflowSecond1>
+        </S.LessflowSecondWrap2>
+        <S.LessflowSecondWrap3>
+          <S.LessflowSecond3> 뉴스의 핵심정보를 </S.LessflowSecond3>
+        </S.LessflowSecondWrap3>
+        <S.LessflowSecondWrap4>
+          <S.LessflowSecond1> 빠르고 간략하게 전달 합니다. </S.LessflowSecond1>
+        </S.LessflowSecondWrap4>
+      </>
+      <>
+        <S.LessflowThWrap>
+          <S.LessflowThTitle> 당신의 하루에 </S.LessflowThTitle>
+        </S.LessflowThWrap>
+        <S.LessflowThWrap1>
+          <S.LessflowThTitle> <S.Lessflowless>lessf!ow</S.Lessflowless>를 더하세요 </S.LessflowThTitle>
+        </S.LessflowThWrap1>
       </>
     </>
   );

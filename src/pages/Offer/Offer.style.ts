@@ -341,5 +341,186 @@ export const LessflowTitleWrap = styled.div`
     display: flex;
 
     margin-left: 13%;
-    margin-top: 313%;
+    margin-top: 320%;
+`
+
+export const Lessflow2 = styled.div`
+    color: #000;
+
+    font-family: Inter;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+`
+
+export const Lessflow2Wrap = styled.div`
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+
+    margin-left: 13%;
+    margin-top: 333%;
+`
+
+export const Lessflow3Wrap = styled.div`
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+
+    margin-left: 13%;
+    margin-top: 350%;
+`
+
+export const Lessflow3 = styled.div`
+    color: #000;
+
+    text-align: right;
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+`
+
+export const Lessflow4Wrap = styled.div`
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+
+    margin-left: 13%;
+    margin-top: 358%;
+`
+
+export const LessflowSecond = styled.div`
+    color: #6591FF;
+
+    font-family: Inter;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+`
+
+export const LessflowSecondWrap = styled.div`
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+
+    margin-left: 59%;
+    margin-top: 400%;
+`
+
+export const LessflowSecond1 = styled.div`
+    color: #000;
+
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+`
+
+export const LessflowSecondWrap1 = styled.div`
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+
+    margin-left: 59%;
+    margin-top: 408%;
+`
+
+export const LessflowSecondWrap2 = styled.div`
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+
+    margin-left: 59%;
+    margin-top: 412%;
+`
+
+export const LessflowSecond3 = styled.div`
+    color: #000;
+
+    font-family: Inter;
+    font-size: 37px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+`
+
+export const LessflowSecond31 = styled.span`
+    color: #000;
+    font-family: Inter;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+`
+
+export const LessflowSecondWrap3 = styled.div`
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+
+    margin-left: 59%;
+    margin-top: 418%;
+`
+
+export const LessflowSecondWrap4 = styled.div`
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+
+    margin-left: 59%;
+    margin-top: 425%;
+`
+export const LessflowThWrap = styled.div`
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+
+    margin-left: 13%;
+    margin-top: 465%;
+`
+
+export const LessflowThTitle = styled.div`
+    color: #000;
+
+    text-align: right;
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+`
+
+export const LessflowThWrap1 = styled.div`
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+
+    margin-left: 13%;
+    margin-top: 470%;
+`
+
+export const Lessflowless = styled.span`
+    color: #FFF;
+
+    text-align: right;
+    font-family: Inter;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
 `
