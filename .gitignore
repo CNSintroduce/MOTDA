@@ -1,6 +1,4 @@
-*/node_modules
-/.pnp
-.pnp.js
+/node_modules
 
 .DS_Store
 pakage.json
@@ -8,4 +6,3 @@ yarn.rock
 pakage-rock.json
 
 /.idea
-node_modules
