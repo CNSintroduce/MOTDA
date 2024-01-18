@@ -1,25 +1,25 @@
 import React, { useRef, useState, useEffect } from "react";
 import MainHeader from "../../components/Header1/Header1";
-import * as s from "../Main/MainIntro.style";
+import * as s from "../Main/MainIntro.style.js";
 import imsi from "../../assets/img/imsi.svg";
 import Success from "../../assets/img/Success.svg";
 import Challenge from "../../assets/img/Challenge.svg";
 import Navigate from "../../assets/img/Navigate.svg";
 import Last from "../../assets/img/Last.svg";
 
-const MainIntro = () => {
-  const element1 = useRef(null);
-  const element2 = useRef(null);
-  const element3 = useRef(null);
-  const [challengeVisible, setChallengeVisible] = useState(false);
-  const [navigateVisible, setNavigateVisible] = useState(false);
-  const [successVisible, setSuccessVisible] = useState(false);
+const MainIntro = (): JSX.Element => {
+  const element1 = useRef<HTMLElement>(null);
+  const element2 = useRef<HTMLElement>(null);
+  const element3 = useRef<HTMLElement>(null);
+  const [challengeVisible, setChallengeVisible] = useState<boolean>(false);
+  const [navigateVisible, setNavigateVisible] = useState<boolean>(false);
+  const [successVisible, setSuccessVisible] = useState<boolean>(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      const { top: top1 } = element1.current.getBoundingClientRect();
-      const { top: top2 } = element2.current.getBoundingClientRect();
-      const { top: top3 } = element3.current.getBoundingClientRect();
+      const { top: top1 } = element1.current!.getBoundingClientRect();
+      const { top: top2 } = element2.current!.getBoundingClientRect();
+      const { top: top3 } = element3.current!.getBoundingClientRect();
       const isInViewPort1 = top1 >= 0 && top1 <= window.innerHeight;
       const isInViewPort2 = top2 >= 0 && top2 <= window.innerHeight;
       const isInViewPort3 = top3 >= 0 && top3 <= window.innerHeight;
