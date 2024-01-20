@@ -1,15 +1,10 @@
 import styled from "styled-components";
 
-export const MainHeader = styled.div`
-  display: flex;
-  width: 100%;
-  height: 40px;
-  justify-content: flex-end;
-  align-items: center;
-`;
-
 export const Container = styled.div`
   display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
 `;
 
 export const Context = styled.div`
