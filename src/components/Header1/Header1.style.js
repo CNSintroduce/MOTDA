@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const MainHeader = styled.div`
   display: flex;
   width: 100%;
-  height: 50px;
+  height: 40px;
   justify-content: flex-end;
   align-items: center;
 `;
