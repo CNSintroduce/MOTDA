@@ -524,3 +524,18 @@ export const Lessflowless = styled.span`
     font-weight: 800;
     line-height: normal;
 `
+
+export const CnsHomeButton = styled.button`
+    width: 100px;
+    height: 100px;
+    flex-shrink: 0;
+
+    fill: #FFF;
+    border: 1px #1556F7;
+`
+
+export const CnsButtonLogo = styled.img`
+    width: 51px;
+    height: 28px;
+    flex-shrink: 0;
+`

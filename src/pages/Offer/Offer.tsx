@@ -9,6 +9,8 @@ import serviceBackground from "../../assets/img/serivceBackground.svg";
 import bluelineBackground from "../../assets/img/bluelineBackground.svg";
 import whitelineBackground from "../../assets/img/servicewhiteline.svg";
 
+import cnsLogo from "../../assets/cns.svg";
+
 const Offer = () => {
   return (
     <>
@@ -124,6 +126,9 @@ const Offer = () => {
           <S.LessflowThTitle> <S.Lessflowless>lessf!ow</S.Lessflowless>를 더하세요 </S.LessflowThTitle>
         </S.LessflowThWrap1>
       </>
+      <S.CnsHomeButton> 
+        <S.CnsButtonLogo src={cnsLogo}/>
+      </S.CnsHomeButton>
     </>
   );
 };
