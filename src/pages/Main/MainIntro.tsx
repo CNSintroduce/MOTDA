@@ -11,9 +11,7 @@ const MainIntro = (): JSX.Element => {
   const element1 = useRef<HTMLElement>(null);
   const element2 = useRef<HTMLElement>(null);
   const element3 = useRef<HTMLElement>(null);
-  const [challengeVisible, setChallengeVisible] = useState<boolean>(false);
-  const [navigateVisible, setNavigateVisible] = useState<boolean>(false);
-  const [successVisible, setSuccessVisible] = useState<boolean>(false);
+  const [visibleElements, setVisibleElements] = useState<number>(0);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -23,9 +21,13 @@ const MainIntro = (): JSX.Element => {
       const isInViewPort1 = top1 >= 0 && top1 <= window.innerHeight;
       const isInViewPort2 = top2 >= 0 && top2 <= window.innerHeight;
       const isInViewPort3 = top3 >= 0 && top3 <= window.innerHeight;
-      setChallengeVisible(isInViewPort1);
-      setNavigateVisible(isInViewPort2);
-      setSuccessVisible(isInViewPort3);
+
+      let visibleCount = 0;
+      if (isInViewPort1) visibleCount = 1;
+      if (isInViewPort2) visibleCount = 2;
+      if (isInViewPort3) visibleCount = 3;
+
+      setVisibleElements(visibleCount);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -58,8 +60,8 @@ const MainIntro = (): JSX.Element => {
           src={Challenge}
           alt=""
           style={{
-            opacity: challengeVisible ? 1 : 0,
-            transform: challengeVisible ? "translateY(0)" : "translateY(50px)",
+            opacity: visibleElements >= 1 ? 1 : 0,
+            transform: `translateY(${visibleElements >= 1 ? "0" : "50px"})`,
             transition: "opacity 0.5s, transform 0.5s",
           }}
         />
@@ -69,8 +71,8 @@ const MainIntro = (): JSX.Element => {
           src={Navigate}
           alt=""
           style={{
-            opacity: navigateVisible ? 1 : 0,
-            transform: navigateVisible ? "translateY(0)" : "translateY(50px)",
+            opacity: visibleElements >= 2 ? 1 : 0,
+            transform: `translateY(${visibleElements >= 2 ? "0" : "50px"})`,
             transition: "opacity 0.5s, transform 0.5s",
           }}
         />
@@ -80,8 +82,8 @@ const MainIntro = (): JSX.Element => {
           src={Success}
           alt=""
           style={{
-            opacity: successVisible ? 1 : 0,
-            transform: successVisible ? "translateY(0)" : "translateY(50px)",
+            opacity: visibleElements >= 3 ? 1 : 0,
+            transform: `translateY(${visibleElements >= 3 ? "0" : "50px"})`,
             transition: "opacity 0.5s, transform 0.5s",
           }}
         />
