@@ -4,7 +4,7 @@ export const MainTop = styled.div`
   display: flex;
   flex-direction: column;
   width: 50vw;
-  height: 95vh;
+  height: 100vh;
   background-color: #1a276d;
   overflow-x: hidden;
 `;
@@ -59,6 +59,7 @@ export const Imsi = styled.img`
 `;
 
 export const CNSP = styled.p`
+  color: #000;
   font-size: 30px;
   font-weight: 600;
   margin-bottom: 100px;

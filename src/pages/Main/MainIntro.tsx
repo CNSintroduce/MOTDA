@@ -1,31 +1,33 @@
 import React, { useRef, useState, useEffect } from "react";
 import MainHeader from "../../components/Header1/Header1";
-import * as s from "../Main/MainIntro.style";
+import * as s from "../Main/MainIntro.style.js";
 import imsi from "../../assets/img/imsi.svg";
 import Success from "../../assets/img/Success.svg";
 import Challenge from "../../assets/img/Challenge.svg";
 import Navigate from "../../assets/img/Navigate.svg";
 import Last from "../../assets/img/Last.svg";
 
-const MainIntro = () => {
-  const element1 = useRef(null);
-  const element2 = useRef(null);
-  const element3 = useRef(null);
-  const [challengeVisible, setChallengeVisible] = useState(false);
-  const [navigateVisible, setNavigateVisible] = useState(false);
-  const [successVisible, setSuccessVisible] = useState(false);
+const MainIntro = (): JSX.Element => {
+  const element1 = useRef<HTMLElement>(null);
+  const element2 = useRef<HTMLElement>(null);
+  const element3 = useRef<HTMLElement>(null);
+  const [visibleElements, setVisibleElements] = useState<number>(0);
 
   useEffect(() => {
     const handleScroll = () => {
-      const { top: top1 } = element1.current.getBoundingClientRect();
-      const { top: top2 } = element2.current.getBoundingClientRect();
-      const { top: top3 } = element3.current.getBoundingClientRect();
+      const { top: top1 } = element1.current!.getBoundingClientRect();
+      const { top: top2 } = element2.current!.getBoundingClientRect();
+      const { top: top3 } = element3.current!.getBoundingClientRect();
       const isInViewPort1 = top1 >= 0 && top1 <= window.innerHeight;
       const isInViewPort2 = top2 >= 0 && top2 <= window.innerHeight;
       const isInViewPort3 = top3 >= 0 && top3 <= window.innerHeight;
-      setChallengeVisible(isInViewPort1);
-      setNavigateVisible(isInViewPort2);
-      setSuccessVisible(isInViewPort3);
+
+      let visibleCount = 0;
+      if (isInViewPort1) visibleCount = 1;
+      if (isInViewPort2) visibleCount = 2;
+      if (isInViewPort3) visibleCount = 3;
+
+      setVisibleElements(visibleCount);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -49,17 +51,17 @@ const MainIntro = () => {
           당신의 시작을 가치있게, <br />
           입학 원서 접수 사이트를 개발하는 <s.CNS>CNS</s.CNS> 입니다.
         </s.CNSText2>
+        <s.Imsi src={imsi} alt="" />
       </s.MainTop>
 
-      <s.Imsi src={imsi} alt="" />
       <s.MainMiddle>
         <s.MainMiddleImg
           ref={element1}
           src={Challenge}
           alt=""
           style={{
-            opacity: challengeVisible ? 1 : 0,
-            transform: challengeVisible ? "translateY(0)" : "translateY(50px)",
+            opacity: visibleElements >= 1 ? 1 : 0,
+            transform: `translateY(${visibleElements >= 1 ? "0" : "50px"})`,
             transition: "opacity 0.5s, transform 0.5s",
           }}
         />
@@ -69,8 +71,8 @@ const MainIntro = () => {
           src={Navigate}
           alt=""
           style={{
-            opacity: navigateVisible ? 1 : 0,
-            transform: navigateVisible ? "translateY(0)" : "translateY(50px)",
+            opacity: visibleElements >= 2 ? 1 : 0,
+            transform: `translateY(${visibleElements >= 2 ? "0" : "50px"})`,
             transition: "opacity 0.5s, transform 0.5s",
           }}
         />
@@ -80,8 +82,8 @@ const MainIntro = () => {
           src={Success}
           alt=""
           style={{
-            opacity: successVisible ? 1 : 0,
-            transform: successVisible ? "translateY(0)" : "translateY(50px)",
+            opacity: visibleElements >= 3 ? 1 : 0,
+            transform: `translateY(${visibleElements >= 3 ? "0" : "50px"})`,
             transition: "opacity 0.5s, transform 0.5s",
           }}
         />
