@@ -1,6 +1,9 @@
 import React, {useState} from "react";
 import * as S from "../Introduction/Introduction.style"
 import Header from "../../components/Header2/Header2";
+import Crown from "../../assets/img/crown.svg"
+import Github from "../../assets/img/github.svg"
+import src from "*?url";
 const Introduction = () => {
     const [isClick, setIsClick] = useState<number | null>(null);
 
@@ -42,14 +45,17 @@ const Introduction = () => {
                             {
                                 isClick === 5 &&(
                                     <S.Member>배채희
+                                        <S.Leader src={Crown}/>
                                         <S.MemberPosition>Front-end Developer</S.MemberPosition>
+                                        <S.Github src={Github} style={{marginLeft:"76.2%"}} onClick={()=>{window.open("https://github.com/whywwhy")}}/>
                                     </S.Member>
                                 )
                             }
                             {
                                 isClick === 5 &&(
                                     <S.Member>윤세욱
-                                        <S.MemberPosition>Front-end Developer & Back-end Developer</S.MemberPosition>
+                                        <S.MemberPosition>Back-end Developer</S.MemberPosition>
+                                        <S.Github src={Github} onClick={()=>{window.open("https://github.com/LimiteDiTempo")}}/>
                                     </S.Member>
                                 )
                             }
@@ -57,6 +63,7 @@ const Introduction = () => {
                                 isClick === 5 &&(
                                     <S.Member>전우진
                                         <S.MemberPosition>Front-end Developer</S.MemberPosition>
+                                        <S.Github src={Github} onClick={()=>{window.open("https://github.com/greenfrog616")}}/>
                                     </S.Member>
                                 )
                             }
@@ -64,6 +71,7 @@ const Introduction = () => {
                                 isClick === 5 &&(
                                     <S.Member>이윤선
                                         <S.MemberPosition>Design</S.MemberPosition>
+                                        <S.Github src={Github} onClick={()=>{window.open("https://github.com/yoonsun123 ")}}/>
                                     </S.Member>
                                 )
                             }
@@ -71,6 +79,7 @@ const Introduction = () => {
                                 isClick === 5 &&(
                                     <S.Member>최미래
                                         <S.MemberPosition>Back-end Developer</S.MemberPosition>
+                                        <S.Github src={Github} onClick={()=>{window.open("https://github.com/miraexhoi ")}}/>
                                     </S.Member>
                                 )
                             }
@@ -92,7 +101,9 @@ const Introduction = () => {
                             {
                                 isClick === 4 &&(
                                     <S.Member>조수현
+                                        <S.Leader src={Crown}/>
                                         <S.MemberPosition>Front-end Developer</S.MemberPosition>
+                                        <S.Github src={Github} style={{marginLeft:"76.2%"}} onClick={()=>{window.open("https://github.com/sueeeeh")}}/>
                                     </S.Member>
                                 )
                             }
@@ -100,6 +111,7 @@ const Introduction = () => {
                                 isClick === 4 &&(
                                     <S.Member>조완규
                                         <S.MemberPosition>Back-end Developer</S.MemberPosition>
+                                        <S.Github src={Github} onClick={()=>{window.open("https://github.com/pea06")}}/>
                                     </S.Member>
                                 )
                             }
@@ -107,6 +119,7 @@ const Introduction = () => {
                                 isClick === 4 &&(
                                     <S.Member>배경민
                                         <S.MemberPosition>Front-end Developer</S.MemberPosition>
+                                        <S.Github src={Github} onClick={()=>{window.open("https://github.com/Bae0203")}}/>
                                     </S.Member>
                                 )
                             }
@@ -114,6 +127,7 @@ const Introduction = () => {
                                 isClick === 4 &&(
                                     <S.Member>강지석
                                         <S.MemberPosition>Back-end Developer</S.MemberPosition>
+                                        <S.Github src={Github} onClick={()=>{window.open("https://github.com/jiseok419")}}/>
                                     </S.Member>
                                 )
                             }
@@ -121,6 +135,7 @@ const Introduction = () => {
                                 isClick === 4 &&(
                                     <S.Member>최아영
                                         <S.MemberPosition>Front-end Developer</S.MemberPosition>
+                                        <S.Github src={Github} onClick={()=>{window.open("https://github.com/chldkduds2")}}/>
                                     </S.Member>
                                 )
                             }
@@ -142,7 +157,9 @@ const Introduction = () => {
                             {
                                 isClick === 3 &&(
                                     <S.Member>정우재
+                                        <S.Leader src={Crown}/>
                                         <S.MemberPosition>Front-end Developer</S.MemberPosition>
+                                        <S.Github src={Github} style={{marginLeft:"76.2%"}} onClick={()=>{window.open("https://github.com/woojae05")}}/>
                                     </S.Member>
                                 )
                             }
@@ -150,6 +167,7 @@ const Introduction = () => {
                                 isClick === 3 &&(
                                     <S.Member>강성훈
                                         <S.MemberPosition>Front-end Developer</S.MemberPosition>
+                                        <S.Github src={Github} onClick={()=>{window.open("https://github.com/ksh5324")}}/>
                                     </S.Member>
                                 )
                             }
@@ -157,6 +175,7 @@ const Introduction = () => {
                                 isClick === 3 &&(
                                     <S.Member>박병관
                                         <S.MemberPosition>Front-end Developer</S.MemberPosition>
+                                        <S.Github src={Github} onClick={()=>{window.open("https://github.com/codingbotPark")}}/>
                                     </S.Member>
                                 )
                             }
@@ -164,6 +183,7 @@ const Introduction = () => {
                                 isClick === 3 &&(
                                     <S.Member>배진영
                                         <S.MemberPosition>Front-end Developer</S.MemberPosition>
+                                        <S.Github src={Github} onClick={()=>{window.open("https://github.com/baejin1018")}}/>
                                     </S.Member>
                                 )
                             }
@@ -171,6 +191,7 @@ const Introduction = () => {
                                 isClick === 3 &&(
                                     <S.Member>이승민
                                         <S.MemberPosition>Back-end Developer</S.MemberPosition>
+                                        <S.Github src={Github} onClick={()=>{window.open("https://github.com/ericlee05")}}/>
                                     </S.Member>
                                 )
                             }
@@ -178,6 +199,7 @@ const Introduction = () => {
                                 isClick === 3 &&(
                                     <S.Member>임재청
                                         <S.MemberPosition>Back-end Developer</S.MemberPosition>
+                                        <S.Github src={Github} onClick={()=>{window.open("https://github.com/iqpizza6349")}}/>
                                     </S.Member>
                                 )
                             }
@@ -185,6 +207,7 @@ const Introduction = () => {
                                 isClick === 3 &&(
                                     <S.Member>김영성
                                         <S.MemberPosition>Design</S.MemberPosition>
+                                        <S.Github src={Github} onClick={()=>{window.open("https://github.com/Yeong-seong")}}/>
                                     </S.Member>
                                 )
                             }
@@ -206,7 +229,9 @@ const Introduction = () => {
                             {
                                 isClick === 2 &&(
                                     <S.Member>류수아
+                                        <S.Leader src={Crown}/>
                                         <S.MemberPosition>Front-end Developer</S.MemberPosition>
+                                        <S.Github src={Github} style={{marginLeft:"76.2%"}} onClick={()=>{window.open("https://github.com/foxbox-r")}}/>
                                     </S.Member>
                                 )
                             }
@@ -214,6 +239,7 @@ const Introduction = () => {
                                 isClick === 2 &&(
                                     <S.Member>이민욱
                                         <S.MemberPosition>Front-end Developer</S.MemberPosition>
+                                        <S.Github src={Github} onClick={()=>{window.open("https://github.com/leeminewook")}}/>
                                     </S.Member>
                                 )
                             }
@@ -221,6 +247,7 @@ const Introduction = () => {
                                 isClick === 2 &&(
                                     <S.Member>조민수
                                         <S.MemberPosition>Front-end Developer</S.MemberPosition>
+                                        <S.Github src={Github} onClick={()=>{window.open("https://github.com/toswm128")}}/>
                                     </S.Member>
                                 )
                             }
@@ -228,6 +255,7 @@ const Introduction = () => {
                                 isClick === 2 &&(
                                     <S.Member>남주영
                                         <S.MemberPosition>Back-end Developer</S.MemberPosition>
+                                        <S.Github src={Github} onClick={()=>{window.open("https://github.com/joo01029")}}/>
                                     </S.Member>
                                 )
                             }
@@ -235,6 +263,7 @@ const Introduction = () => {
                                 isClick === 2 &&(
                                     <S.Member>허새찬
                                         <S.MemberPosition>Back-end Developer</S.MemberPosition>
+                                        <S.Github src={Github} onClick={()=>{window.open("https://github.com/H-SChan")}}/>
                                     </S.Member>
                                 )
                             }
@@ -256,7 +285,9 @@ const Introduction = () => {
                             {
                                 isClick === 1 &&(
                                     <S.Member>차승호
-                                        <S.MemberPosition>Front-end Developer & Back-end Developer</S.MemberPosition>
+                                        <S.Leader src={Crown}/>
+                                        <S.MemberPosition>Front-end Developer</S.MemberPosition>
+                                        <S.Github src={Github} style={{marginLeft:"76.2%"}} onClick={()=>{window.open("https://github.com/Sh031224")}}/>
                                     </S.Member>
                                 )
                             }
@@ -264,6 +295,7 @@ const Introduction = () => {
                                 isClick === 1 &&(
                                     <S.Member>조민희
                                         <S.MemberPosition>Front-end Developer</S.MemberPosition>
+                                        <S.Github src={Github} onClick={()=>{window.open("https://github.com/Jominhui")}}/>
                                     </S.Member>
                                 )
                             }
@@ -271,6 +303,7 @@ const Introduction = () => {
                                 isClick === 1 &&(
                                     <S.Member>정성훈
                                         <S.MemberPosition>Back-end Developer</S.MemberPosition>
+                                        <S.Github src={Github} onClick={()=>{window.open("https://github.com/jsh0128")}}/>
                                     </S.Member>
                                 )
                             }
