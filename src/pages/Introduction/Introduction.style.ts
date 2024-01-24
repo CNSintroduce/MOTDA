@@ -118,9 +118,10 @@ export const Member = styled.div`
     height: 5vh;
     color: #1a1a1a;
     padding-top: 1vh;
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-family: Inter;
     margin-left: 12vw;
+    margin-top:10px;
     display:flex;
     animation: ${fadeIn} 0.3s ease-in;
     border-bottom: 0.7px solid #B0B0B0;
@@ -135,11 +136,27 @@ export const MemberPosition = styled.div`
     font-family: Inter;
     font-size: 17px;
     font-style: normal;
+    flex-direction: row;
+    position: absolute;
     font-weight: 400;
-    margin-left: 8vw;
-    padding-top: 1vh;
+    margin-left: 10vw;
     line-height: normal;
 `
+export const Leader = styled.img`
+    display: flex;
+    margin-bottom: 20px;
+    margin-left: 5px;
+`
+
 export const Image = styled.svg`
     transition: transform 0.3s;
+`
+
+export const Github = styled.img`
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    cursor: pointer;
+    margin-left: 80%;
+    margin-bottom: 20px;
 `
