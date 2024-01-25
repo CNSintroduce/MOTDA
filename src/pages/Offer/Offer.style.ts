@@ -526,16 +526,34 @@ export const Lessflowless = styled.span`
 `
 
 export const CnsHomeButton = styled.button`
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     flex-shrink: 0;
 
-    fill: #FFF;
-    border: 1px #1556F7;
+    border-radius: 100%;
+
+    background-color: #fff;
+    border-color: #1556F7;
 `
 
+
 export const CnsButtonLogo = styled.img`
-    width: 51px;
-    height: 28px;
+    width: 40.8px;
+    height: 22.4px;
     flex-shrink: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`
+
+export const ButtonWrap = styled.div`
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 999;
 `

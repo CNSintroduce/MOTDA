@@ -1,4 +1,6 @@
 import React from "react";
+import { useNavigate, useLocation } from 'react-router-dom';
+
 import Header from "../../components/Header2/Header2";
 import * as S from "../Offer/Offer.style";
 
@@ -12,6 +14,12 @@ import whitelineBackground from "../../assets/img/servicewhiteline.svg";
 import cnsLogo from "../../assets/cns.svg";
 
 const Offer = () => {
+
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const isMain = location.pathname === "/";
+
   return (
     <>
       <Header />
@@ -126,9 +134,11 @@ const Offer = () => {
           <S.LessflowThTitle> <S.Lessflowless>lessf!ow</S.Lessflowless>를 더하세요 </S.LessflowThTitle>
         </S.LessflowThWrap1>
       </>
-      <S.CnsHomeButton> 
-        <S.CnsButtonLogo src={cnsLogo}/>
-      </S.CnsHomeButton>
+      <S.ButtonWrap>
+        <S.CnsHomeButton onClick={() => navigate("/")}> 
+          <S.CnsButtonLogo src={cnsLogo}/>
+        </S.CnsHomeButton>
+      </S.ButtonWrap>
     </>
   );
 };
