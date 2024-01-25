@@ -51,14 +51,14 @@ const MainIntro = (): JSX.Element => {
           당신의 시작을 가치있게, <br />
           입학 원서 접수 사이트를 개발하는 <s.CNS>CNS</s.CNS> 입니다.
         </s.CNSText2>
-        <s.Imsi src={imsi} alt="" />
+        <s.Imsi src={imsi} alt="error" />
       </s.MainTop>
 
       <s.MainMiddle>
         <s.MainMiddleImg
           ref={element1}
           src={Challenge}
-          alt=""
+          alt="error"
           style={{
             opacity: visibleElements >= 1 ? 1 : 0,
             transform: `translateY(${visibleElements >= 1 ? "0" : "50px"})`,
@@ -69,7 +69,7 @@ const MainIntro = (): JSX.Element => {
         <s.MainMiddleImg
           ref={element2}
           src={Navigate}
-          alt=""
+          alt="error"
           style={{
             opacity: visibleElements >= 2 ? 1 : 0,
             transform: `translateY(${visibleElements >= 2 ? "0" : "50px"})`,
@@ -80,7 +80,7 @@ const MainIntro = (): JSX.Element => {
         <s.MainMiddleImg
           ref={element3}
           src={Success}
-          alt=""
+          alt="error"
           style={{
             opacity: visibleElements >= 3 ? 1 : 0,
             transform: `translateY(${visibleElements >= 3 ? "0" : "50px"})`,
@@ -90,7 +90,7 @@ const MainIntro = (): JSX.Element => {
       </s.MainMiddle>
       <s.CNSBottom>
         <s.CNSP>당신의 시작을 그려주는 동아리, CNS입니다.</s.CNSP>
-        <img src={Last} alt="" />
+        <img src={Last} alt="error" />
       </s.CNSBottom>
     </>
   );
