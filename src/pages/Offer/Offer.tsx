@@ -62,6 +62,9 @@ const Offer = () => {
             <S.IdatTitleWrap>
                 <S.IdaTitle> IDA </S.IdaTitle>
             </S.IdatTitleWrap>
+            <S.IdaMainImgWrap>
+              <S.IdaMainImg src={idamain}/>
+            </S.IdaMainImgWrap>
           </>
           <>
             <S.blueLine src={bluelineBackground}/>
@@ -96,6 +99,9 @@ const Offer = () => {
             <S.IdaSecondWrap2> 
               <S.IdaSecond2> IDA </S.IdaSecond2>
             </S.IdaSecondWrap2>
+            <S.IdaSecondImgWrap>
+              <S.IdaSecondImg src={idasecond}/>
+            </S.IdaSecondImgWrap>
           </>
       </>
       <> 
@@ -112,6 +118,9 @@ const Offer = () => {
         <S.Lessflow4Wrap>
           <S.Lessflow3> 정보는 흐르게 </S.Lessflow3>
         </S.Lessflow4Wrap>
+        <S.LessflowMainImgWrap>
+          <S.LessflowMainImg src={lessflowmain}/>
+        </S.LessflowMainImgWrap>
       </>
       <>
         <S.LessflowSecondWrap>
@@ -129,6 +138,9 @@ const Offer = () => {
         <S.LessflowSecondWrap4>
           <S.LessflowSecond1> 빠르고 간략하게 전달 합니다. </S.LessflowSecond1>
         </S.LessflowSecondWrap4>
+        <S.LessflowsecondImgWrap>
+          <S.LessflowsecondImg src={lessflowsecond}/>
+        </S.LessflowsecondImgWrap>
       </>
       <>
         <S.LessflowThWrap>

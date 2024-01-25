@@ -557,3 +557,66 @@ export const ButtonWrap = styled.div`
     align-items: flex-end;
     z-index: 999;
 `
+
+export const IdaMainImg = styled.img`
+    width: 1095px;
+    height: 821px;
+    flex-shrink: 0;
+`
+
+export const IdaMainImgWrap = styled.div`
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+
+    margin-left: 0%;
+    margin-top: 130%;
+`
+
+export const IdaSecondImg = styled.img`
+    width: 421px;
+    height: 403px;
+    flex-shrink: 0;
+`
+
+export const IdaSecondImgWrap = styled.div`
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+
+    margin-left: 12%;
+    margin-top: 260%;
+`
+
+export const LessflowMainImg = styled.img`
+width: 646px;
+height: 574px;
+    flex-shrink: 0;
+`
+
+export const LessflowMainImgWrap = styled.div`
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+
+    margin-left: 50%;
+    margin-top: 325%;
+`
+
+export const LessflowsecondImg = styled.img`
+    width: 672px;
+    height: 504px;
+`
+
+export const LessflowsecondImgWrap = styled.div`
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+
+    margin-left: 0%;
+    margin-top: 400%;
+`
