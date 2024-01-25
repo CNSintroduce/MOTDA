@@ -10,6 +10,10 @@ import mokup2 from "../../assets/img/mokup2.png";
 import serviceBackground from "../../assets/img/serivceBackground.svg";
 import bluelineBackground from "../../assets/img/bluelineBackground.svg";
 import whitelineBackground from "../../assets/img/servicewhiteline.svg";
+import idamain from "../../assets/img/idamain.svg";
+import idasecond from "../../assets/img/idasecond.svg";
+import lessflowmain from "../../assets/img/lessf!owmain.svg";
+import lessflowsecond from "../../assets/img/lessflowsecond.svg";
 
 import cnsLogo from "../../assets/cns.svg";
 
