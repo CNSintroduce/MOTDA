@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, {keyframes} from "styled-components";
 
 export const ServiceMain = styled.img`
   object-fit: cover;
@@ -620,3 +620,4 @@ export const LessflowsecondImgWrap = styled.div`
     margin-left: 0%;
     margin-top: 400%;
 `
+

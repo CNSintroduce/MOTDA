@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef, useState  } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 
 import Header from "../../components/Header2/Header2";
@@ -17,12 +17,47 @@ import lessflowsecond from "../../assets/img/lessflowsecond.svg";
 
 import cnsLogo from "../../assets/cns.svg";
 
-const Offer = () => {
-
+const Offer: React.FC = () => {
   const navigate = useNavigate();
   const location = useLocation();
+  const isMain = location.pathname === '/';
 
-  const isMain = location.pathname === "/";
+  const animatedElementRef1 = useRef<HTMLDivElement>(null);
+  const animatedElementRef2 = useRef<HTMLDivElement>(null);
+  const animatedElementRef3 = useRef<HTMLDivElement>(null);
+
+  const [visibleElements, setVisibleElements] = useState<number>(0);
+
+  useEffect(() => {
+    const handleScrollOffer = () => {
+      const elements = [animatedElementRef1, animatedElementRef2, animatedElementRef3];
+
+      const visibleCount = elements.reduce((count, elementRef) => {
+        if (elementRef.current) {
+          const { top } = elementRef.current.getBoundingClientRect();
+          const isInViewPort = top >= 0 && top <= window.innerHeight;
+          if (isInViewPort) {
+            return count + 1;
+          }
+        }
+        return count;
+      }, 0);
+
+      setVisibleElements(visibleCount);
+    };
+
+    window.addEventListener('scroll', handleScrollOffer);
+
+    return () => {
+      window.removeEventListener('scroll', handleScrollOffer);
+    };
+  }, []);
+
+  const calculateFadeIn = (elementIndex: number) => {
+    const scrollThreshold = window.innerHeight / 2; // Changed to 50% point
+    const topOffset = window.innerHeight / 3 * (elementIndex + 1);
+    return window.scrollY + topOffset >= scrollThreshold;
+  };
 
   return (
     <>
@@ -33,7 +68,9 @@ const Offer = () => {
           <S.Page2Img>
             <S.Service2 src={service2nd} alt="error" />
             <S.Page2div>
-              <S.Page2Text>
+              <S.Page2Text 
+              ref={animatedElementRef1}
+              style={{ opacity: calculateFadeIn(0) ? 1 : 0, transition: 'opacity 2.5s ease' }}>
                 꿈을 이루기 위한 도전의 첫걸음을 함께합니다.
               </S.Page2Text>
             </S.Page2div>
