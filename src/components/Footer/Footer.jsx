@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react'
 import * as S from "../Footer/Footer.style.js";
 import footerLogo from "../../assets/img/footerLogo.svg";
@@ -26,6 +27,16 @@ const Footer = () => {
       </S.sendMent>
     </S.footerContainer>
     </>
+=======
+import React from 'react';
+import * as S from"./Footer.style.js";
+
+const Footer = () => {
+  return (
+    <S.FooterContainer>
+        <div>footer</div>
+    </S.FooterContainer>
+>>>>>>> 5a5966b630930fac1d110934f66868ec921854f3
   )
 }
 

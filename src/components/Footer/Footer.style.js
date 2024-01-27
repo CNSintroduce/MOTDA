@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+<<<<<<< HEAD
 
 export const footerContainer = styled.div`
 background-color: #010335;
@@ -54,4 +55,8 @@ export const content = styled.span`
 margin: 0;
 display: flex;
 align-items: flex-end;
+=======
+export const FooterContainer = styled.div`
+  background-color: red;
+>>>>>>> 5a5966b630930fac1d110934f66868ec921854f3
 `;
