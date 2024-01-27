@@ -9,10 +9,11 @@ export const Container = styled.div`
 
 export const Context = styled.div`
   display: flex;
-  margin-top: 10vh;
-  margin-right: 5vw;
+  margin-top: 3.438rem;
+  margin-right: 5.5vw;
   width: 40vw;
-  font-weight: bolder;
+  color: black;
+  font-weight: bold;
   font-size: 17px;
   justify-content: space-around;
   align-items: center;
