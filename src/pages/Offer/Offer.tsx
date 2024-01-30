@@ -25,39 +25,44 @@ const Offer: React.FC = () => {
   const animatedElementRef1 = useRef<HTMLDivElement>(null);
   const animatedElementRef2 = useRef<HTMLDivElement>(null);
   const animatedElementRef3 = useRef<HTMLDivElement>(null);
+  const animatedElementRef4 = useRef<HTMLDivElement>(null);
+  const animatedElementRef5 = useRef<HTMLDivElement>(null);
+  const animatedElementRef6 = useRef<HTMLDivElement>(null);
+  const animatedElementRef7 = useRef<HTMLDivElement>(null);
+  const animatedElementRef8 = useRef<HTMLDivElement>(null);  
 
   const [visibleElements, setVisibleElements] = useState<number>(0);
 
   useEffect(() => {
-    const handleScrollOffer = () => {
-      const elements = [animatedElementRef1, animatedElementRef2, animatedElementRef3];
-
-      const visibleCount = elements.reduce((count, elementRef) => {
-        if (elementRef.current) {
-          const { top } = elementRef.current.getBoundingClientRect();
-          const isInViewPort = top >= 0 && top <= window.innerHeight;
-          if (isInViewPort) {
-            return count + 1;
-          }
-        }
-        return count;
-      }, 0);
-
+    const OfferScroll = () => {
+      const { top: top1 } = animatedElementRef1.current!.getBoundingClientRect();
+      const { top: top2 } = animatedElementRef2.current!.getBoundingClientRect();
+      const { top: top3 } = animatedElementRef3.current!.getBoundingClientRect();
+      const { top: top4 } = animatedElementRef4.current!.getBoundingClientRect(); 
+      const { top: top5 } = animatedElementRef5.current!.getBoundingClientRect(); 
+  
+      const isInViewPort1 = top1 >= 0 && top1 <= window.innerHeight;
+      const isInViewPort2 = top2 >= 0 && top2 <= window.innerHeight;
+      const isInViewPort3 = top3 >= 0 && top3 <= window.innerHeight;
+      const isInViewPort4 = top4 >= 0 && top4 <= window.innerHeight; 
+      const isInViewPort5 = top5 >= 0 && top5 <= window.innerHeight;  
+  
+      let visibleCount = 0;
+      if (isInViewPort1) visibleCount = 1;
+      if (isInViewPort2) visibleCount = 2;
+      if (isInViewPort3) visibleCount = 3;
+      if (isInViewPort4) visibleCount = 4;  // Add this line
+      if (isInViewPort5) visibleCount = 5;  // Add this line
+  
       setVisibleElements(visibleCount);
     };
 
-    window.addEventListener('scroll', handleScrollOffer);
+    window.addEventListener("scroll", OfferScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScrollOffer);
+      window.removeEventListener("scroll", OfferScroll);
     };
   }, []);
-
-  const calculateFadeIn = (elementIndex: number) => {
-    const scrollThreshold = window.innerHeight / 2; // Changed to 50% point
-    const topOffset = window.innerHeight / 3 * (elementIndex + 1);
-    return window.scrollY + topOffset >= scrollThreshold;
-  };
 
   return (
     <>
@@ -70,19 +75,35 @@ const Offer: React.FC = () => {
             <S.Page2div>
               <S.Page2Text 
               ref={animatedElementRef1}
-              style={{ opacity: calculateFadeIn(0) ? 1 : 0, transition: 'opacity 2.5s ease' }}>
+              style={{
+                opacity: visibleElements >= 1 ? 1 : 0,
+                transform: `translateY(${visibleElements >= 1 ? "0" : "50px"})`,
+                transition: "opacity 0.5s, transform 2.3s",
+              }}>
                 꿈을 이루기 위한 도전의 첫걸음을 함께합니다.
               </S.Page2Text>
             </S.Page2div>
             <S.Page2ddiv>
-                <S.Page2text>
+                <S.Page2text 
+                   ref={animatedElementRef2}
+                   style={{
+                     opacity: visibleElements >= 2 ? 1 : 0,
+                     transform: `translateY(${visibleElements >= 1 ? "0" : "50px"})`,
+                    transition: "opacity 0.5s, transform 2.3s", 
+                   }}>
                 “<S.Challenge>Challenge</S.Challenge>, 
                 <br/> <S.Navigate>Navigate</S.Navigate> 
                 <br/> and <S.Success>Success</S.Success>"
                 </S.Page2text>
             </S.Page2ddiv>
             <S.Page2dddiv>
-                <S.Page2TexT>
+                <S.Page2TexT 
+                ref={animatedElementRef3}
+                style={{
+                  opacity: visibleElements >= 3 ? 1 : 0,
+                  transform: `translateY(${visibleElements >= 1 ? "0" : "50px"})`,
+                  transition: "opacity 0.5s, transform 2.3s",
+                }}>
                     CNS팀은 도전하는 개발자를 사랑하고 <br/>
                     길잡이가 되어주는 개발자를 응원하고 <br/>
                     여러분이 성공을 즐기는 개발자가 되기를 바랍니다.
@@ -93,10 +114,22 @@ const Offer: React.FC = () => {
         </>
         <>
             <S.Page3Img src={serviceBackground} alt="error"/>
-            <S.Page3Text>
+            <S.Page3Text
+            ref={animatedElementRef4}
+            style={{
+              opacity: visibleElements >= 4 ? 1 : 0,
+              transform: `translateY(${visibleElements >= 4 ? "0" : "50px"})`,
+              transition: "opacity 0.5s, transform 2.3s",
+            }}>
                 <S.Present> 신입생을 위한 선물, </S.Present>
             </S.Page3Text>
-            <S.IdatTitleWrap>
+            <S.IdatTitleWrap
+            ref={animatedElementRef5}
+            style={{
+              opacity: visibleElements >= 5 ? 1 : 0,
+              transform: `translateY(${visibleElements >= 5 ? "0" : "50px"})`,
+              transition: "opacity 0.5s, transform 2.3s",
+            }}>
                 <S.IdaTitle> IDA </S.IdaTitle>
             </S.IdatTitleWrap>
             <S.IdaMainImgWrap>
