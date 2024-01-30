@@ -29,7 +29,10 @@ const Offer: React.FC = () => {
   const animatedElementRef5 = useRef<HTMLDivElement>(null);
   const animatedElementRef6 = useRef<HTMLDivElement>(null);
   const animatedElementRef7 = useRef<HTMLDivElement>(null);
-  const animatedElementRef8 = useRef<HTMLDivElement>(null);  
+  const animatedElementRef8 = useRef<HTMLDivElement>(null); 
+  const animatedElementRef9 = useRef<HTMLDivElement>(null);  
+  const animatedElementRef10 = useRef<HTMLDivElement>(null); 
+  const animatedElementRef11 = useRef<HTMLDivElement>(null); 
 
   const [visibleElements, setVisibleElements] = useState<number>(0);
 
@@ -40,19 +43,37 @@ const Offer: React.FC = () => {
       const { top: top3 } = animatedElementRef3.current!.getBoundingClientRect();
       const { top: top4 } = animatedElementRef4.current!.getBoundingClientRect(); 
       const { top: top5 } = animatedElementRef5.current!.getBoundingClientRect(); 
+      const { top: top6 } = animatedElementRef6.current!.getBoundingClientRect(); 
+      const { top: top7 } = animatedElementRef7.current!.getBoundingClientRect(); 
+      const { top: top8 } = animatedElementRef8.current!.getBoundingClientRect(); 
+      const { top: top9 } = animatedElementRef9.current!.getBoundingClientRect(); 
+      const { top: top10 } = animatedElementRef10.current!.getBoundingClientRect(); 
+      const { top: top11 } = animatedElementRef11.current!.getBoundingClientRect(); 
   
       const isInViewPort1 = top1 >= 0 && top1 <= window.innerHeight;
       const isInViewPort2 = top2 >= 0 && top2 <= window.innerHeight;
       const isInViewPort3 = top3 >= 0 && top3 <= window.innerHeight;
       const isInViewPort4 = top4 >= 0 && top4 <= window.innerHeight; 
-      const isInViewPort5 = top5 >= 0 && top5 <= window.innerHeight;  
+      const isInViewPort5 = top5 >= 0 && top5 <= window.innerHeight; 
+      const isInViewPort6 = top6 >= 0 && top6 <= window.innerHeight; 
+      const isInViewPort7 = top7 >= 0 && top7 <= window.innerHeight;
+      const isInViewPort8 = top8 >= 0 && top8 <= window.innerHeight;
+      const isInViewPort9 = top9 >= 0 && top9 <= window.innerHeight;
+      const isInViewPort10 = top10 >= 0 && top10 <= window.innerHeight;
+      const isInViewPort11 = top11 >= 0 && top11 <= window.innerHeight;
   
       let visibleCount = 0;
       if (isInViewPort1) visibleCount = 1;
       if (isInViewPort2) visibleCount = 2;
       if (isInViewPort3) visibleCount = 3;
-      if (isInViewPort4) visibleCount = 4;  // Add this line
-      if (isInViewPort5) visibleCount = 5;  // Add this line
+      if (isInViewPort4) visibleCount = 4;  
+      if (isInViewPort5) visibleCount = 5;
+      if (isInViewPort6) visibleCount = 6; 
+      if (isInViewPort7) visibleCount = 7;
+      if (isInViewPort8) visibleCount = 8;
+      if (isInViewPort9) visibleCount = 9;
+      if (isInViewPort10) visibleCount = 10;
+      if (isInViewPort11) visibleCount = 11;
   
       setVisibleElements(visibleCount);
     };
@@ -139,34 +160,77 @@ const Offer: React.FC = () => {
           <>
             <S.blueLine src={bluelineBackground}/>
             <S.IdaFirstWrap>
-              <S.IdaFirst>
+              <S.IdaFirst
+              ref={animatedElementRef6}
+              style={{
+                opacity: visibleElements >= 6 ? 1 : 0,
+                transform: `translateY(${visibleElements >= 6 ? "0" : "50px"})`,
+                transition: "opacity 0.5s, transform 2.3s",
+              }}>
                 <S.IdaFirstIda> IDA</S.IdaFirstIda> 는
               </S.IdaFirst>
             </S.IdaFirstWrap>
-            <S.IdaFirstWrap2>
+            <S.IdaFirstWrap2
+            ref={animatedElementRef7}
+            style={{
+              opacity: visibleElements >= 7 ? 7 : 0,
+              transform: `translateY(${visibleElements >= 7 ? "0" : "50px"})`,
+              transition: "opacity 0.5s, transform 2.3s",
+            }}>
               <S.IdaFirst1>
                 신입생의 입학 절차를 도와줄 
               </S.IdaFirst1>
             </S.IdaFirstWrap2>
-            <S.IdaFirstWrap3>
+            <S.IdaFirstWrap3
+            ref={animatedElementRef7}
+            style={{
+              opacity: visibleElements >= 7 ? 7 : 0,
+              transform: `translateY(${visibleElements >= 7 ? "0" : "50px"})`,
+              transition: "opacity 0.5s, transform 2.3s",
+            }}>
               <S.IdaFirst>
                 <S.IdaFirstIdaStu> "학생"</S.IdaFirstIdaStu>들이 개발한 
               </S.IdaFirst>
             </S.IdaFirstWrap3>
             <S.IdaFirstWrap4>
-              <S.IdaFirst>
+              <S.IdaFirst
+              ref={animatedElementRef8}
+              style={{
+                opacity: visibleElements >= 8 ? 8 : 0,
+                transform: `translateY(${visibleElements >= 8 ? "0" : "50px"})`,
+                transition: "opacity 0.5s, transform 2.3s",
+              }}>
                 <S.IdaFirstIdaSite> 입학원서 접수 사이트</S.IdaFirstIdaSite>입니다.
               </S.IdaFirst>
             </S.IdaFirstWrap4>
           </>
           <>
-            <S.IdaSecondWrap> 
+            <S.IdaSecondWrap
+            ref={animatedElementRef9}
+            style={{
+              opacity: visibleElements >= 9 ? 9 : 0,
+              transform: `translateY(${visibleElements >= 9 ? "0" : "50px"})`,
+              transition: "opacity 0.5s, transform 2.3s",
+            }}> 
               <S.IdaSecond1> 당신의 새로운 출발을 위한 </S.IdaSecond1>
             </S.IdaSecondWrap>
-            <S.IdaSecondWrap1> 
-              <S.IdaSecond1> 가장 따뜻한 서비스, </S.IdaSecond1>
+            <S.IdaSecondWrap1
+            > 
+              <S.IdaSecond1
+              ref={animatedElementRef10}
+              style={{
+                opacity: visibleElements >= 10 ? 10 : 0,
+                transform: `translateY(${visibleElements >= 10 ? "0" : "50px"})`,
+                transition: "opacity 0.5s, transform 2.3s",
+              }}> 가장 따뜻한 서비스, </S.IdaSecond1>
             </S.IdaSecondWrap1>
-            <S.IdaSecondWrap2> 
+            <S.IdaSecondWrap2
+            ref={animatedElementRef11}
+            style={{
+              opacity: visibleElements >= 11 ? 11 : 0,
+              transform: `translateY(${visibleElements >= 11 ? "0" : "50px"})`,
+              transition: "opacity 0.5s, transform 2.3s",
+            }}> 
               <S.IdaSecond2> IDA </S.IdaSecond2>
             </S.IdaSecondWrap2>
             <S.IdaSecondImgWrap>
