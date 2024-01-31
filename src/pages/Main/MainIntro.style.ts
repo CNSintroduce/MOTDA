@@ -51,7 +51,7 @@ export const CNSP = styled.p`
   color: #000;
   font-size: 30px;
   font-weight: 600;
-  margin-bottom: 100px;
+  margin-bottom: 120px;
   margin-left: 20px;
 `;
 export const CNSBottom = styled.div`
@@ -60,6 +60,7 @@ export const CNSBottom = styled.div`
   align-items: center;
   flex-direction: column;
   justify-content: space-around;
+  margin-bottom: 20vh;
 `;
 export const MainMiddle = styled.div`
   margin-top: 30vh;
