@@ -37,24 +37,13 @@ export const CNS2 = styled.span`
   font-weight: 500;
 `;
 
-export const One1 = styled.img`
-  position: absolute;
-  left: 80vw;
-  top: 85vh;
-`;
-
-export const One2 = styled.img`
-  position: absolute;
-  top: 175vh;
-`;
-
 export const Imsi = styled.img`
   position: absolute;
   overflow: hidden;
   object-fit: none;
   object-position: left top;
   left: 43vw;
-  top: 10vw;
+  top: 5vw;
   transform: scaleX(1.3);
 `;
 
