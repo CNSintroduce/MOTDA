@@ -42,8 +42,8 @@ export const Imsi = styled.img`
   overflow: hidden;
   object-fit: none;
   object-position: left top;
-  left: 43vw;
-  top: 5vw;
+  left: 49vw;
+  top: 8vw;
   transform: scaleX(1.3);
 `;
 
