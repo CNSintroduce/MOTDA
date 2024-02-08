@@ -12,9 +12,8 @@ export const Context = styled.div`
   margin-top: 3.438rem;
   margin-right: 5.5vw;
   width: 40vw;
-  color: black;
   font-weight: bold;
-  font-size: 17px;
+  font-size: 1.1em;
   justify-content: space-around;
   align-items: center;
 `;
