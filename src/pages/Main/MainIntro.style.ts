@@ -40,11 +40,11 @@ export const CNS2 = styled.span`
 export const Imsi = styled.img`
   position: absolute;
   overflow: hidden;
-  object-fit: none;
   object-position: left top;
-  left: 49vw;
-  top: 8vw;
-  transform: scaleX(1.3);
+  right:0;
+  top: 5.5vw;
+ width:calc(100vw - 50vw);
+
 `;
 
 export const CNSP = styled.p`
