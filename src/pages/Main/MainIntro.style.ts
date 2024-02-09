@@ -10,41 +10,44 @@ export const MainTop = styled.div`
 `;
 
 export const CNSText = styled.p`
-  font-size: 60px;
+  font-size: 4vw;
   font-family: Pretendard;
   font-weight: 300;
   margin-left: 10vw;
-  margin-top: 10vw;
+  margin-top: 10vh;
   color: #fff;
 `;
 
 export const CNSText2 = styled.p`
   color: #fff;
-  margin-top: 5vw;
+  margin-top: 5vh;
   margin-left: 10vw;
-  font-size: 1.3rem;
+  font-size: 1.5vw;
   font-weight: 400;
 `;
 
 export const CNS = styled.span`
   color: #fff;
-  font-size: 20px;
+  font-size: 1.5vw;
   font-weight: 600;
 `;
 
 export const CNS2 = styled.span`
-  font-size: 5.3rem;
+  font-size: 5vw;
   font-weight: 500;
 `;
 
 export const Imsi = styled.img`
+border-radius:20px 0 0 20px;
   position: absolute;
   overflow: hidden;
-  object-position: left top;
+  object-position: top;
   right:0;
-  top: 5.5vw;
- width:calc(100vw - 50vw);
-
+  top: 5.5vh;
+  object-fit:cover;
+  width:calc(100vw - 45vw);
+  height:calc(100vh - 10vh);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 `;
 
 export const CNSP = styled.p`
