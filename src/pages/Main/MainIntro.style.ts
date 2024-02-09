@@ -22,7 +22,7 @@ export const CNSText2 = styled.p`
   color: #fff;
   margin-top: 5vw;
   margin-left: 10vw;
-  font-size: 20px;
+  font-size: 1.3rem;
   font-weight: 400;
 `;
 
@@ -33,18 +33,18 @@ export const CNS = styled.span`
 `;
 
 export const CNS2 = styled.span`
-  font-size: 70px;
+  font-size: 5.3rem;
   font-weight: 500;
 `;
 
 export const Imsi = styled.img`
   position: absolute;
   overflow: hidden;
-  object-fit: none;
   object-position: left top;
-  left: 43vw;
-  top: 5vw;
-  transform: scaleX(1.3);
+  right:0;
+  top: 5.5vw;
+ width:calc(100vw - 50vw);
+
 `;
 
 export const CNSP = styled.p`
