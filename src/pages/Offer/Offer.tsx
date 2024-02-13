@@ -397,7 +397,6 @@ const Offer: React.FC = () => {
           <S.CnsButtonLogo src={cnsLogo}/>
         </S.CnsHomeButton>
       </S.ButtonWrap>
-      <Footer/>
     </>
   );
 };
