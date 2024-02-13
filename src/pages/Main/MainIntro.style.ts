@@ -38,15 +38,15 @@ export const CNS2 = styled.span`
 `;
 
 export const Imsi = styled.img`
-border-radius:20px 0 0 20px;
+  border-radius: 2% 0 0 2%;
   position: absolute;
   overflow: hidden;
   object-position: top;
-  right:0;
-  top: 5.5vh;
-  object-fit:cover;
-  width:calc(100vw - 45vw);
-  height:calc(100vh - 10vh);
+  right: 0;
+  top: 15vh;
+  object-fit: cover;
+  width: calc(100vw - 45vw);
+  height: calc(100vh - 20vh);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 `;
 
