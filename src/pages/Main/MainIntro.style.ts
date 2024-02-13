@@ -14,13 +14,13 @@ export const CNSText = styled.p`
   font-family: Pretendard;
   font-weight: 300;
   margin-left: 10vw;
-  margin-top: 10vh;
+  margin-top: 20vh;
   color: #fff;
 `;
 
 export const CNSText2 = styled.p`
   color: #fff;
-  margin-top: 5vh;
+  margin-top: 10vh;
   margin-left: 10vw;
   font-size: 1.5vw;
   font-weight: 400;
