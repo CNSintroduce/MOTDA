@@ -16,4 +16,5 @@ export const Context = styled.div`
   font-size: 1.1em;
   justify-content: space-around;
   align-items: center;
+  color: black;
 `;
