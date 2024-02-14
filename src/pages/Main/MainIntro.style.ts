@@ -10,59 +10,51 @@ export const MainTop = styled.div`
 `;
 
 export const CNSText = styled.p`
-  font-size: 60px;
+  font-size: 4vw;
   font-family: Pretendard;
-  font-weight: 300;
+  font-weight: 400;
   margin-left: 10vw;
-  margin-top: 10vw;
+  margin-top: 20vh;
   color: #fff;
 `;
 
 export const CNSText2 = styled.p`
   color: #fff;
-  margin-top: 5vw;
+  margin-top: 10vh;
   margin-left: 10vw;
-  font-size: 20px;
-  font-weight: 400;
+  font-size: 1.5vw;
+  font-weight: 500;
 `;
 
 export const CNS = styled.span`
   color: #fff;
-  font-size: 20px;
+  font-size: 1.5vw;
   font-weight: 600;
 `;
 
 export const CNS2 = styled.span`
-  font-size: 70px;
+  font-size: 5vw;
   font-weight: 500;
 `;
 
-export const One1 = styled.img`
-  position: absolute;
-  left: 80vw;
-  top: 85vh;
-`;
-
-export const One2 = styled.img`
-  position: absolute;
-  top: 175vh;
-`;
-
 export const Imsi = styled.img`
+  border-radius: 2% 0 0 2%;
   position: absolute;
   overflow: hidden;
-  object-fit: none;
-  object-position: left top;
-  left: 43vw;
-  top: 10vw;
-  transform: scaleX(1.3);
+  object-position: top;
+  right: 0;
+  top: 15vh;
+  object-fit: cover;
+  width: calc(100vw - 45vw);
+  height: calc(100vh - 20vh);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 `;
 
 export const CNSP = styled.p`
   color: #000;
   font-size: 30px;
   font-weight: 600;
-  margin-bottom: 100px;
+  margin-bottom: 120px;
   margin-left: 20px;
 `;
 export const CNSBottom = styled.div`
@@ -71,6 +63,7 @@ export const CNSBottom = styled.div`
   align-items: center;
   flex-direction: column;
   justify-content: space-around;
+  margin-bottom: 20vh;
 `;
 export const MainMiddle = styled.div`
   margin-top: 30vh;

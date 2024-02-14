@@ -19,7 +19,7 @@ export const MainText = styled.div`
     color: #1a1a1a;
     text-align: center;
     font-family: Inter;
-    font-size: 40px;
+    font-size: 2.5rem;
     font-style: normal;
     font-weight: 700;
     margin-left: 18vw;
@@ -134,18 +134,21 @@ export const Member = styled.div`
 export const MemberPosition = styled.div`
     color: #1a1a1a;
     font-family: Inter;
-    font-size: 17px;
+    font-size: 1rem;
     font-style: normal;
     flex-direction: row;
     position: absolute;
     font-weight: 400;
-    margin-left: 10vw;
+    margin-left: 16vw;
     line-height: normal;
 `
+
 export const Leader = styled.img`
     display: flex;
-    margin-bottom: 20px;
+    margin-top: 2.5px;
     margin-left: 5px;
+    width: 15px;
+    height: 15px;
 `
 
 export const Image = styled.svg`
