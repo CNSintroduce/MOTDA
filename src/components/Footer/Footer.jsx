@@ -21,7 +21,7 @@ const Footer = () => {
       <S.sendMent>
         <S.p>
           <S.content>Contact us</S.content>
-          <S.content><img src={sendIcon} alt='' /></S.content>
+          <S.content><a href="mailto:cnsofficial2019@gmail.com"><img src={sendIcon} alt=''/></a></S.content>
         </S.p>
       </S.sendMent>
     </S.footerContainer>
