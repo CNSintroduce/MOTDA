@@ -1,6 +1,6 @@
 import React, { useRef, useState, useEffect } from "react";
 import MainHeader from "../../components/Header1/Header1";
-import * as s from "../Main/MainIntro.style.js";
+import * as s from "../Main/MainIntro.style";
 import Top from "../../assets/img/imsi.svg";
 import Success from "../../assets/img/Success.svg";
 import Challenge from "../../assets/img/Challenge.svg";
@@ -8,16 +8,22 @@ import Navigate from "../../assets/img/Navigate.svg";
 import Last from "../../assets/img/Last.svg";
 
 const MainIntro = (): JSX.Element => {
-  const element1 = useRef<HTMLElement>(null);
-  const element2 = useRef<HTMLElement>(null);
-  const element3 = useRef<HTMLElement>(null);
+  const element1 = useRef<HTMLImageElement>(null);
+  const element2 = useRef<HTMLImageElement>(null);
+  const element3 = useRef<HTMLImageElement>(null);
   const [visibleElements, setVisibleElements] = useState<number>(0);
 
   useEffect(() => {
     const handleScroll = () => {
-      const { top: top1 } = element1.current!.getBoundingClientRect();
-      const { top: top2 } = element2.current!.getBoundingClientRect();
-      const { top: top3 } = element3.current!.getBoundingClientRect();
+      const { top: top1 } = element1.current?.getBoundingClientRect() || {
+        top: 0,
+      };
+      const { top: top2 } = element2.current?.getBoundingClientRect() || {
+        top: 0,
+      };
+      const { top: top3 } = element3.current?.getBoundingClientRect() || {
+        top: 0,
+      };
       const isInViewPort1 = top1 >= 0 && top1 <= window.innerHeight;
       const isInViewPort2 = top2 >= 0 && top2 <= window.innerHeight;
       const isInViewPort3 = top3 >= 0 && top3 <= window.innerHeight;
@@ -51,14 +57,9 @@ const MainIntro = (): JSX.Element => {
           당신의 시작을 가치있게, <br />
           입학 원서 접수 사이트를 개발하는 <s.CNS>CNS</s.CNS> 입니다.
         </s.CNSText2>
-        
       </s.MainTop>
-      
+
       <s.Imsi src={Top} alt="error" />
-      
-      
-      
-      
 
       <s.MainMiddle>
         <s.MainMiddleImg
