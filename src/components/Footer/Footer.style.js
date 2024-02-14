@@ -4,8 +4,7 @@ import styled from "styled-components";
 export const footerContainer = styled.div`
 background-color: #010335;
 display: flex;
-  position: relative;
-  bottom: 0;
+  position: absolute;
   left: 0;
   right: 0;
   padding-left: 3.563rem;
