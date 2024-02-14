@@ -3,7 +3,8 @@ import * as S from "../Introduction/Introduction.style"
 import Header from "../../components/Header2/Header2";
 import Crown from "../../assets/img/crown.svg"
 import Github from "../../assets/img/github.svg"
-import src from "*?url";
+import Footer from "../../components/Footer/Footer"
+
 const Introduction = () => {
     const [isClick, setIsClick] = useState<number | null>(null);
 
@@ -47,7 +48,7 @@ const Introduction = () => {
                                     <S.Member>배채희
                                         <S.Leader src={Crown}/>
                                         <S.MemberPosition>Front-end Developer</S.MemberPosition>
-                                        <S.Github src={Github} style={{marginLeft:"76.2%"}} onClick={()=>{window.open("https://github.com/whywwhy")}}/>
+                                        <S.Github src={Github} style={{marginLeft:"77%"}} onClick={()=>{window.open("https://github.com/whywwhy")}}/>
                                     </S.Member>
                                 )
                             }
@@ -103,7 +104,7 @@ const Introduction = () => {
                                     <S.Member>조수현
                                         <S.Leader src={Crown}/>
                                         <S.MemberPosition>Front-end Developer</S.MemberPosition>
-                                        <S.Github src={Github} style={{marginLeft:"76.2%"}} onClick={()=>{window.open("https://github.com/sueeeeh")}}/>
+                                        <S.Github src={Github} style={{marginLeft:"77%"}} onClick={()=>{window.open("https://github.com/sueeeeh")}}/>
                                     </S.Member>
                                 )
                             }
@@ -159,7 +160,7 @@ const Introduction = () => {
                                     <S.Member>정우재
                                         <S.Leader src={Crown}/>
                                         <S.MemberPosition>Front-end Developer</S.MemberPosition>
-                                        <S.Github src={Github} style={{marginLeft:"76.2%"}} onClick={()=>{window.open("https://github.com/woojae05")}}/>
+                                        <S.Github src={Github} style={{marginLeft:"77%"}} onClick={()=>{window.open("https://github.com/woojae05")}}/>
                                     </S.Member>
                                 )
                             }
@@ -231,7 +232,7 @@ const Introduction = () => {
                                     <S.Member>류수아
                                         <S.Leader src={Crown}/>
                                         <S.MemberPosition>Front-end Developer</S.MemberPosition>
-                                        <S.Github src={Github} style={{marginLeft:"76.2%"}} onClick={()=>{window.open("https://github.com/foxbox-r")}}/>
+                                        <S.Github src={Github} style={{marginLeft:"77%"}} onClick={()=>{window.open("https://github.com/foxbox-r")}}/>
                                     </S.Member>
                                 )
                             }
@@ -287,7 +288,7 @@ const Introduction = () => {
                                     <S.Member>차승호
                                         <S.Leader src={Crown}/>
                                         <S.MemberPosition>Front-end Developer</S.MemberPosition>
-                                        <S.Github src={Github} style={{marginLeft:"76.2%"}} onClick={()=>{window.open("https://github.com/Sh031224")}}/>
+                                        <S.Github src={Github} style={{marginLeft:"77%"}} onClick={()=>{window.open("https://github.com/Sh031224")}}/>
                                     </S.Member>
                                 )
                             }
@@ -318,6 +319,7 @@ const Introduction = () => {
                     </div>
                 </S.ContentWrap>
             </S.Container>
+            <Footer/>
         </>
     );
 };

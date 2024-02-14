@@ -18,7 +18,7 @@ export const MainText = styled.div`
     color: #1a1a1a;
     text-align: center;
     font-family: Inter;
-    font-size: 40px;
+    font-size: 2.5rem;
     font-style: normal;
     font-weight: 700;
     margin-left: 18vw;
@@ -65,7 +65,7 @@ export const Answer = styled.div`
     height: 7vh;
     color: #6A6A6A;
     font-family: Inter;
-    font-size: 17px;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
