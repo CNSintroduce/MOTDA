@@ -12,7 +12,7 @@ export const MainTop = styled.div`
 export const CNSText = styled.p`
   font-size: 4vw;
   font-family: Pretendard;
-  font-weight: 300;
+  font-weight: 400;
   margin-left: 10vw;
   margin-top: 20vh;
   color: #fff;
@@ -23,7 +23,7 @@ export const CNSText2 = styled.p`
   margin-top: 10vh;
   margin-left: 10vw;
   font-size: 1.5vw;
-  font-weight: 400;
+  font-weight: 500;
 `;
 
 export const CNS = styled.span`
