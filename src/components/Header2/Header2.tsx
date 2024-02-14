@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate, useLocation } from 'react-router-dom';
 
-import * as S from "../Header2/Header2.style.js";
+import * as S from "./Header2.style.js";
 import imgLogo from "../../assets/cns.svg";
 
 const Header = () => {

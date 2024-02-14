@@ -1,5 +1,5 @@
 import React from 'react'
-import * as S from "../Footer/Footer.style.js";
+import * as S from "./Footer.style.js";
 import footerLogo from "../../assets/img/footerLogo.svg";
 import sendIcon from "../../assets/img/sendIcon.svg";
 

@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate, useLocation } from 'react-router-dom';
 
-import * as S from "../Header1/Header1.style.js";
+import * as S from "./Header1.style.js";
 
 const MainHeader = () => {
 
