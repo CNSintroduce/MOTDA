@@ -6,7 +6,7 @@ import Success from "../../assets/img/Success.svg";
 import Challenge from "../../assets/img/Challenge.svg";
 import Navigate from "../../assets/img/Navigate.svg";
 import Last from "../../assets/img/Last.svg";
-
+import Footer from "../../components/Footer/Footer";
 const MainIntro = (): JSX.Element => {
   const element1 = useRef<HTMLImageElement>(null);
   const element2 = useRef<HTMLImageElement>(null);
@@ -99,6 +99,7 @@ const MainIntro = (): JSX.Element => {
         <s.CNSP>당신의 시작을 그려주는 동아리, CNS입니다.</s.CNSP>
         <img src={Last} alt="error" />
       </s.CNSBottom>
+      <Footer></Footer>
     </>
   );
 };
