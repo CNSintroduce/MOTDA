@@ -23,9 +23,11 @@ export const Page2div = styled.div`
   position: absolute;
   top: 0;
   left: 0;
+  width: 90vw;
   display: flex;
+  justify-content: flex-end;
 
-  margin-left: 50%;
+  /* margin-left: 50%; */
   margin-top: 10%;
 `;
 
@@ -43,9 +45,10 @@ export const Page2ddiv = styled.div`
   position: absolute;
   top: 0;
   left: 0;
+  width: 90vw;
   display: flex;
+  justify-content: flex-end;
 
-  margin-left: 70%;
   margin-top: 23%;
 `;
 
@@ -91,9 +94,10 @@ export const Page2dddiv = styled.div`
   position: absolute;
   top: 0;
   left: 0;
+  width: 90vw;
   display: flex;
+  justify-content: flex-end;
 
-  margin-left: 59%;
   margin-top: 50%;
 `;
 
@@ -266,9 +270,10 @@ export const IdaSecondWrap = styled.div`
   position: absolute;
   top: 0;
   left: 0;
+  width: 90vw;
   display: flex;
+  justify-content: flex-end;
 
-  margin-left: 65%;
   margin-top: 270%;
 `;
 
@@ -287,9 +292,10 @@ export const IdaSecondWrap1 = styled.div`
   position: absolute;
   top: 0;
   left: 0;
+  width: 90vw;
   display: flex;
+  justify-content: flex-end;
 
-  margin-left: 71%;
   margin-top: 275%;
 `;
 
@@ -297,9 +303,10 @@ export const IdaSecondWrap2 = styled.div`
   position: absolute;
   top: 0;
   left: 0;
+  width: 90vw;
   display: flex;
-
-  margin-left: 79%;
+  justify-content: flex-end;
+  
   margin-top: 280%;
 `;
 
