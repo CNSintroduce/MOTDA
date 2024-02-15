@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 
-import Header from "src/components/Header2/Header2";
-import Footer from "src/components/Footer/Footer";
+import Header from "../../components/Header2/Header2";
+import Footer from "../../components/Footer/Footer";
 import * as S from "../Offer/Offer.style";
 
 import serviceMain from "../../assets/img/serviceMain.png";

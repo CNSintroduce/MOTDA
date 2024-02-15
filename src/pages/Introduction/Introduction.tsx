@@ -1,9 +1,9 @@
 import React, {useState} from "react";
 import * as S from "../Introduction/Introduction.style"
-import Header from "src/components/Header2/Header2";
+import Header from "../../components/Header2/Header2";
 import Crown from "../../assets/img/crown.svg"
 import Github from "../../assets/img/github.svg"
-import Footer from "src/components/Footer/Footer"
+import Footer from "../../components/Footer/Footer"
 
 const Introduction = () => {
     const [isClick, setIsClick] = useState<number | null>(null);
