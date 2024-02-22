@@ -22,4 +22,6 @@ export const Context = styled.div`
   align-items: center;
   font-weight: bolder;
   font-size: 17px;
+  cursor: pointer;
+  color: black;
 `;
