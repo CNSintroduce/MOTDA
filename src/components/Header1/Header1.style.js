@@ -17,4 +17,5 @@ export const Context = styled.div`
   justify-content: space-around;
   align-items: center;
   color: black;
+  cursor: pointer;
 `;
