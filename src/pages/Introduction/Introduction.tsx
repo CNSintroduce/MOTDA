@@ -3,7 +3,8 @@ import * as S from "../Introduction/Introduction.style"
 import Header from "../../components/Header2/Header2";
 import Crown from "../../assets/img/crown.svg"
 import Github from "../../assets/img/github.svg"
-import src from "*?url";
+import Footer from "../../components/Footer/Footer"
+
 const Introduction = () => {
     const [isClick, setIsClick] = useState<number | null>(null);
 
@@ -21,8 +22,7 @@ const Introduction = () => {
                 <S.ContentWrap>
                     <div style={{display: "flex", flexDirection: "row"}}>
                         <S.SubTitle>CNS</S.SubTitle>
-                        <S.SubText>CNS팀은 도전하는 개발자를 사랑하고, 길잡이가 되어주는 개발자를 응원하고, 여러분이 성공을 즐기는 개발자가 되기를 바랍니다. 꿈을 이루기 위한 도전의
-                            첫걸음을 함께합니다.</S.SubText>
+                        <S.SubText>CNS 인재상은 원활이 소통에 능하고 협업을 잘 하는 사람, 열정이 가득하여 배울 준비가 된 사람, 그리고 신뢰하며 일을 맡길 수 있는 사람입니다.</S.SubText>
                     </div>
                     <div style={{display: "flex", flexDirection: "column"}}>
                         <S.MemberSubTitle>CNS MEMBER</S.MemberSubTitle>
@@ -47,7 +47,7 @@ const Introduction = () => {
                                     <S.Member>배채희
                                         <S.Leader src={Crown}/>
                                         <S.MemberPosition>Front-end Developer</S.MemberPosition>
-                                        <S.Github src={Github} style={{marginLeft:"76.2%"}} onClick={()=>{window.open("https://github.com/whywwhy")}}/>
+                                        <S.Github src={Github} style={{marginLeft:"77%"}} onClick={()=>{window.open("https://github.com/whywwhy")}}/>
                                     </S.Member>
                                 )
                             }
@@ -103,7 +103,7 @@ const Introduction = () => {
                                     <S.Member>조수현
                                         <S.Leader src={Crown}/>
                                         <S.MemberPosition>Front-end Developer</S.MemberPosition>
-                                        <S.Github src={Github} style={{marginLeft:"76.2%"}} onClick={()=>{window.open("https://github.com/sueeeeh")}}/>
+                                        <S.Github src={Github} style={{marginLeft:"77%"}} onClick={()=>{window.open("https://github.com/sueeeeh")}}/>
                                     </S.Member>
                                 )
                             }
@@ -159,7 +159,7 @@ const Introduction = () => {
                                     <S.Member>정우재
                                         <S.Leader src={Crown}/>
                                         <S.MemberPosition>Front-end Developer</S.MemberPosition>
-                                        <S.Github src={Github} style={{marginLeft:"76.2%"}} onClick={()=>{window.open("https://github.com/woojae05")}}/>
+                                        <S.Github src={Github} style={{marginLeft:"77%"}} onClick={()=>{window.open("https://github.com/woojae05")}}/>
                                     </S.Member>
                                 )
                             }
@@ -231,7 +231,7 @@ const Introduction = () => {
                                     <S.Member>류수아
                                         <S.Leader src={Crown}/>
                                         <S.MemberPosition>Front-end Developer</S.MemberPosition>
-                                        <S.Github src={Github} style={{marginLeft:"76.2%"}} onClick={()=>{window.open("https://github.com/foxbox-r")}}/>
+                                        <S.Github src={Github} style={{marginLeft:"77%"}} onClick={()=>{window.open("https://github.com/foxbox-r")}}/>
                                     </S.Member>
                                 )
                             }
@@ -287,7 +287,7 @@ const Introduction = () => {
                                     <S.Member>차승호
                                         <S.Leader src={Crown}/>
                                         <S.MemberPosition>Front-end Developer</S.MemberPosition>
-                                        <S.Github src={Github} style={{marginLeft:"76.2%"}} onClick={()=>{window.open("https://github.com/Sh031224")}}/>
+                                        <S.Github src={Github} style={{marginLeft:"77%"}} onClick={()=>{window.open("https://github.com/Sh031224")}}/>
                                     </S.Member>
                                 )
                             }
@@ -318,6 +318,7 @@ const Introduction = () => {
                     </div>
                 </S.ContentWrap>
             </S.Container>
+            <Footer/>
         </>
     );
 };

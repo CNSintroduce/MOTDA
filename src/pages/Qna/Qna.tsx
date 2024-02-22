@@ -1,6 +1,8 @@
 import React, {useState} from "react";
 import Header from "../../components/Header2/Header2";
 import * as S from "../Qna/Qna.style";
+import Footer from "../../components/Footer/Footer"
+
 const Qna = () => {
     const [isClick, setIsClick] = useState<number | null>(null);
 
@@ -81,6 +83,7 @@ const Qna = () => {
                     }
                 </S.QuestionAndAnswer>
             </S.Container>
+            <Footer/>
         </>
     );
 };
