@@ -12,7 +12,7 @@ const Footer = () => {
         <S.cns><b>C</b>are <b>N</b> <b>S</b>ervice</S.cns>
         <S.cnsInfo>
           <p>
-            CNS .Daegu Software Meister High School since 2019
+            CNS.Daegu Software Meister High School since 2019
             <S.mail>이메일 | cnsofficial2019@gmail.com</S.mail>
           </p>
         </S.cnsInfo>
