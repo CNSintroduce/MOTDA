@@ -16,7 +16,8 @@ const Header = () => {
 
     return (
         <S.MainHeader>
-            <S.Logo src={imgLogo} alt="error" className="Logo" />
+            <S.Logo src={imgLogo} alt="error" className="Logo" 
+            onClick={() => navigate("/")}/>
             <S.Context>
                 <p onClick={() => navigate("/")}>메인</p>
                 <p onClick={() => navigate("/introduction")}>소개</p>

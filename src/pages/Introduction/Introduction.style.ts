@@ -93,7 +93,7 @@ export const SubText = styled.div`
     margin-top: 27vh;
     display: flex;
     flex-wrap: wrap;
-    width: 36.5vw;
+    width: 40vw;
 `
 export const MemberYear = styled.div`
     width: 45vw;
