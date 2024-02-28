@@ -1,5 +1,7 @@
 import styled, { keyframes } from "styled-components";
 
+export const FistWrap = styled.div`
+`
 export const ServiceMain = styled.img`
   object-fit: cover;
   width: 100%;
@@ -113,7 +115,7 @@ export const Page2TexT = styled.span`
 `;
 
 export const Mokup2 = styled.img`
-  width: 800px;
+  width: 90vh;
 
   position: absolute;
   top: 0;
@@ -306,7 +308,7 @@ export const IdaSecondWrap2 = styled.div`
   width: 90vw;
   display: flex;
   justify-content: flex-end;
-  
+
   margin-top: 280%;
 `;
 
