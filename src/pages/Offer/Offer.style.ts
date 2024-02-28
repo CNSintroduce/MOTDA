@@ -149,6 +149,7 @@ export const Present = styled.div`
 `;
 export const Page3Img = styled.img`
   position: relative;
+  
 `;
 
 export const IdaTitle = styled.div`
@@ -567,8 +568,8 @@ export const ButtonWrap = styled.div`
 `;
 
 export const IdaMainImg = styled.img`
-  width: 1095px;
-  height: 821px;
+  width: 120vh;
+  height: auto;
   flex-shrink: 0;
 `;
 
@@ -583,8 +584,8 @@ export const IdaMainImgWrap = styled.div`
 `;
 
 export const IdaSecondImg = styled.img`
-  width: 421px;
-  height: 403px;
+  width: 50vh;
+  height: auto;
   flex-shrink: 0;
 `;
 
@@ -599,8 +600,8 @@ export const IdaSecondImgWrap = styled.div`
 `;
 
 export const LessflowMainImg = styled.img`
-  width: 646px;
-  height: 574px;
+  width: 70vh;
+  height: auto;
   flex-shrink: 0;
 `;
 
@@ -615,8 +616,8 @@ export const LessflowMainImgWrap = styled.div`
 `;
 
 export const LessflowsecondImg = styled.img`
-  width: 672px;
-  height: 504px;
+  width: 80vh;
+  height: auto;
 `;
 
 export const LessflowsecondImgWrap = styled.div`
