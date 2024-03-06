@@ -7,7 +7,7 @@ import Challenge from "../../assets/img/Challenge.svg";
 import Navigate from "../../assets/img/Navigate.svg";
 import Last from "../../assets/img/Last.svg";
 import Footer from "../../components/Footer/Footer";
-import RealMain from "../../assets/img/RealMain.png"
+import RealMain from "../../assets/img/realrealImg.png"
 const MainIntro = (): JSX.Element => {
   const element1 = useRef<HTMLImageElement>(null);
   const element2 = useRef<HTMLImageElement>(null);
