@@ -151,7 +151,9 @@ const Offer: React.FC = () => {
     <>
       <Header />
       <>
-        <S.ServiceMain src={serviceMain} alt="error" />
+        <S.ServiceMain 
+        // src={serviceMain} 
+        alt="error" />
         <S.FistWrap>
           <S.Page2Img>
             <S.Service2 src={service2nd} alt="error" />
