@@ -5,7 +5,7 @@ import Header from "../../components/Header2/Header2";
 import Footer from "../../components/Footer/Footer";
 import * as S from "../Offer/Offer.style";
 
-import serviceMain from "../../assets/img/mainnn.png";
+import serviceMain from "../../assets/img/MainOfferImg.png";
 import service2nd from "../../assets/img/service2page.svg";
 import mokup2 from "../../assets/img/mokup2.png";
 import serviceBackground from "../../assets/img/serivceBackground.svg";
@@ -152,7 +152,7 @@ const Offer: React.FC = () => {
       <Header />
       <>
         <S.ServiceMain 
-        // src={serviceMain} 
+        src={serviceMain} 
         alt="error" />
         <S.FistWrap>
           <S.Page2Img>
